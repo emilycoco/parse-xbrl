@@ -850,7 +850,7 @@ class FundamentantalAccountingConcepts:
                                 self.xbrl.fields['Equity'] = self.xbrl.GetFactValue("us-gaap:AssetsNet", "Instant")
                                 if self.xbrl.fields['Equity'] == None:
                                     self.xbrl.fields['Equity'] = 0
-
+                                    
 
         #EquityAttributableToNoncontrollingInterest
         self.xbrl.fields['EquityAttributableToNoncontrollingInterest'] = self.xbrl.GetFactValue("us-gaap:MinorityInterest", "Instant")
@@ -1419,7 +1419,7 @@ class FundamentantalAccountingConcepts:
         lngCF5 = self.xbrl.fields['NetCashFlowsInvesting'] - (self.xbrl.fields['NetCashFlowsInvestingContinuing'] + self.xbrl.fields['NetCashFlowsInvestingDiscontinued'])
         lngCF6 = self.xbrl.fields['NetCashFlowsFinancing'] - (self.xbrl.fields['NetCashFlowsFinancingContinuing'] + self.xbrl.fields['NetCashFlowsFinancingDiscontinued'])
 
-
+        
         if lngCF1:
             print "CF1: NetCashFlow(" , self.xbrl.fields['NetCashFlow'] , ") = (NetCashFlowsOperating(" , self.xbrl.fields['NetCashFlowsOperating'] , ") , (NetCashFlowsInvesting(" , self.xbrl.fields['NetCashFlowsInvesting'] , ") , (NetCashFlowsFinancing(" , self.xbrl.fields['NetCashFlowsFinancing'] , ") , ExchangeGainsLosses(" , self.xbrl.fields['ExchangeGainsLosses'] , "): " , lngCF1
         if lngCF2:
@@ -1454,3 +1454,4 @@ class FundamentantalAccountingConcepts:
             self.xbrl.fields['ROS'] = self.xbrl.fields['NetIncomeLoss'] / self.xbrl.fields['Revenues']
         except:
             pass
+

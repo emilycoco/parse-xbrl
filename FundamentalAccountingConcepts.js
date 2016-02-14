@@ -14,9 +14,9 @@ function load(xbrlDoc) {
     console.log('Document type: ' + self.xbrl.fields['DocumentType']);
 
     console.log('Balance Sheet Date (document period end date): ' + self.xbrl.fields['DocumentPeriodEndDate']);
-
-    console.log('Context ID for document period focus (instants): ' + self.xbrl.fields['DocumentFiscalPeriodFocusContext']);
-    console.log('Context ID for YTD period (durations): ' + self.xbrl.fields['DocumentFiscalYearFocusContext']);
+    console.log('Income Statement Period (YTD, current period, period start date): ' + self.xbrl.fields['IncomeStatementPeriodYTD'] + ' to ' + self.xbrl.fields['BalanceSheetDate']);
+    console.log('Context ID for document period focus (instants): ' + self.xbrl.fields['ContextForInstants']);
+    console.log('Context ID for YTD period (durations): ' + self.xbrl.fields['ContextForDurations']);
 }
 
 module.exports = {
