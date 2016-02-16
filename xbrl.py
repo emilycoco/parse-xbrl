@@ -22,6 +22,7 @@ class XBRL:
         self.GetBaseInformation()
         self.loadYear(0)
 
+
     def loadYear(self,yearminus=0):
         currentEnd = self.getNode("//dei:DocumentPeriodEndDate").text
         asdate = re.match('\s*(\d{4})-(\d{2})-(\d{2})\s*', currentEnd)
@@ -63,6 +64,7 @@ class XBRL:
 
 
         oNode = self.getNode("//" + SeekConcept + "[@contextRef='" + ContextReference + "']")
+
         if oNode is not None:
             factValue = oNode.text
             if 'nil' in oNode.keys() and oNode.get('nil')=='true':
@@ -309,7 +311,6 @@ class XBRL:
 
         #See if there are any nodes with the document period focus date
         oNodeList_Alt = self.getNodeList("//xbrli:context[xbrli:period/xbrli:instant='" + self.fields['BalanceSheetDate'] + "']")
-        print "here %s" % oNodeList_Alt
         #MsgBox "Node list length: " + oNodeList_Alt.length
         for oNode_Alt in oNodeList_Alt:
             #Found possible contexts

@@ -42,6 +42,7 @@ function parse(pathToXbrlDoc) {
     if (currentYearEnd) {
       self.getCurrentPeriodAndContextInformation(currentYearEnd);
       FundamentalAccountingConcepts.load(self);
+      getFactValue("us-gaap:CommitmentsAndContingencies", "Instant");
     }
   }
 
@@ -54,6 +55,8 @@ function parse(pathToXbrlDoc) {
 
   function getFactValue(concept, periodType) {
     var contextReference;
+    var factNode;
+    var factValue;
 
     if (periodType === 'Instant') {
       contextReference = self.fields['ContextForInstants'];
@@ -62,6 +65,29 @@ function parse(pathToXbrlDoc) {
     } else {
       console.warn('CONTEXT ERROR');
     }
+
+    _.forEach(_.get(self.documentJson, concept), function(node) {
+      if (node.contextRef === contextReference) {
+        factNode = node;
+      }
+    })
+
+    if (factNode) {
+      factValue = factNode['$t'];
+
+      for (key in factNode) {
+        if (key.indexOf('nil') >= 0) {
+          factValue = 0;
+        }
+      }
+      if (typeof factValue === 'string') {
+        factValue = Number(factValue);
+      }
+    } else {
+      return null;
+    }
+
+    return factValue;
   };
 
   function loadYear() {
