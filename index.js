@@ -16,9 +16,9 @@ function parse(pathToXbrlDoc) {
 
   // Load xml and parse to json
   fs.readFile(pathToXbrlDoc, function(err, data) {
-    // fs.writeFile('parsedXml.json', xmlParser.toJson(data), function(err) {
-    //   console.log(err)
-    // })
+    fs.writeFile('parsedXml.json', xmlParser.toJson(data), function(err) {
+      console.log(err)
+    })
     var jsonObj =JSON.parse(xmlParser.toJson(data));
     self.documentJson = jsonObj[Object.keys(jsonObj)[0]];
 
@@ -149,14 +149,13 @@ function parse(pathToXbrlDoc) {
     for (var i = 0; i < instanceNodesArr.length; i++) {
 
       contextId = instanceNodesArr[i].contextRef;
-
-      periodsWithCorrectInstanceContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context'), function(period) {
+        // console.log('HERE', _.get(self.documentJson, 'context').id)
+      periodsWithCorrectInstanceContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context'), function(period) {
         if (period.id === contextId) {
-          contextPeriod = _.get(period, ['xbrli:period', 'xbrli:instant']);
+          contextPeriod = _.get(period, ['xbrli:period', 'xbrli:instant']) || _.get(period, ['period', 'instant']);
 
           if (contextPeriod && contextPeriod === endDate) {
             instanceHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false)
-
             if (instanceHasExplicitMember) {
               return true;
             } else {
@@ -182,15 +181,15 @@ function parse(pathToXbrlDoc) {
 
     for (var k = 0; k < durationNodesArr.length; k++) {
       contextId2 = durationNodesArr[k].contextRef;
-      periodsWithCorrectDurationContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context'), function(period) {
+      periodsWithCorrectDurationContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context'), function(period) {
         if (period.id === contextId2) {
-          contextPeriod2 = _.get(period, ['xbrli:period', 'xbrli:endDate']);
+          contextPeriod2 = _.get(period, ['xbrli:period', 'xbrli:endDate']) || _.get(period, ['period', 'endDate']);
           if (contextPeriod2 === endDate) {
-            durationHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false);
+            durationHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
             if (durationHasExplicitMember) {
               return true;
             } else {
-              startDate = _.get(period, ['xbrli:period', 'xbrli:startDate']);
+              startDate = _.get(period, ['xbrli:period', 'xbrli:startDate']) || _.get(period, ['period', 'startDate']);
               console.log('Context start date:', startDate);
               console.log('YTD start date:', startDateYTD);
 
@@ -230,7 +229,7 @@ function parse(pathToXbrlDoc) {
 
   function lookForAlternativeInstanceContext() {
     var altContextId = null;
-    altNodesArr = _.filter(_.get(self.documentJson, ['xbrli:context', 'xbrli:period', 'xbrli:instant']), function(node) {
+    altNodesArr = _.filter(_.get(self.documentJson, ['xbrli:context', 'xbrli:period', 'xbrli:instant']) || _.get(self.documentJson, ['context', 'period', 'instant']), function(node) {
       if (node === self.fields['BalanceSheetDate']) {
         return true;
       }

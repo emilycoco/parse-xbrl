@@ -1,2 +1,2 @@
 var ParseXrbl = require('./index.js');
-ParseXrbl.parse('./xbrl.xml');
+ParseXrbl.parse('./test/sampleXbrlDocuments/costco_inc_10k.xml');

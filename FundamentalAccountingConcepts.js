@@ -569,7 +569,6 @@ function load(xbrlDoc) {
     if (lngIS4) {
         console.log("IS4: IncomeFromContinuingOperationsBeforeTax(" + self.xbrl.fields['IncomeFromContinuingOperationsBeforeTax'] + ") = IncomeBeforeEquityMethodInvestments(" + self.xbrl.fields['IncomeBeforeEquityMethodInvestments'] + ") + IncomeFromEquityMethodInvestments(" + self.xbrl.fields['IncomeFromEquityMethodInvestments'] + "): " + lngIS4);
     }
-
     if (lngIS5) {
         console.log("IS5: IncomeFromContinuingOperationsAfterTax(" + self.xbrl.fields['IncomeFromContinuingOperationsAfterTax'] + ") = IncomeFromContinuingOperationsBeforeTax(" + self.xbrl.fields['IncomeFromContinuingOperationsBeforeTax'] + ") - IncomeTaxExpenseBenefit(" + self.xbrl.fields['IncomeTaxExpenseBenefit'] + "): " + lngIS5);
     }
@@ -585,10 +584,10 @@ function load(xbrlDoc) {
     if (lngIS9) {
         console.log("IS9: ComprehensiveIncome(" + self.xbrl.fields['ComprehensiveIncome'] + ") = ComprehensiveIncomeAttributableToParent(" + self.xbrl.fields['ComprehensiveIncomeAttributableToParent'] + ") + ComprehensiveIncomeAttributableToNoncontrollingInterest(" + self.xbrl.fields['ComprehensiveIncomeAttributableToNoncontrollingInterest'] + "): " + lngIS9);
     }
-    if (lngIS1) {
+    if (lngIS10) {
         console.log("IS10: ComprehensiveIncome(" + self.xbrl.fields['ComprehensiveIncome'] + ") = NetIncomeLoss(" + self.xbrl.fields['NetIncomeLoss'] + ") + OtherComprehensiveIncome(" + self.xbrl.fields['OtherComprehensiveIncome'] + "): " + lngIS10);
     }
-    if (lngIS1) {
+    if (lngIS11) {
         console.log("IS11: OperatingIncomeLoss(" + self.xbrl.fields['OperatingIncomeLoss'] + ") = Revenues(" + self.xbrl.fields['Revenues'] + ") - CostsAndExpenses(" + self.xbrl.fields['CostsAndExpenses'] + ") + OtherOperatingIncome(" + self.xbrl.fields['OtherOperatingIncome'] + "): " + lngIS11);
     }
 

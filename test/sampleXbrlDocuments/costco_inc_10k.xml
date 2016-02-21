@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<!-- Produced by EDGARsuite software, Advanced Computer Innovations, Inc., Copyright (C) 2008-2015 [PPXAZDGLP1D14M57R4SA]. www.edgarsuite.com -->
+<xbrl xmlns='http://www.xbrl.org/2003/instance' xmlns:us-gaap='http://fasb.org/us-gaap/2015-01-31' xmlns:xbrldi='http://xbrl.org/2006/xbrldi' xmlns:dei='http://xbrl.sec.gov/dei/2014-01-31' xmlns:fil='http://CSST/20151130' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:utr='http://www.xbrl.org/2009/utr' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:iso4217='http://www.xbrl.org/2003/iso4217' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xbrli='http://www.xbrl.org/2003/instance'>
+  <link:schemaRef xlink:type='simple' xlink:href='csst-20151130.xsd' />
+  <us-gaap:AdditionalPaidInCapitalCommonStock decimals='INF' contextRef='I151130' unitRef='USD'>24480</us-gaap:AdditionalPaidInCapitalCommonStock>
+  <us-gaap:AdjustmentsToAdditionalPaidInCapitalOther decimals='INF' contextRef='D141201_151130_StEqComps-AddPaidInCap' unitRef='USD'>24480</us-gaap:AdjustmentsToAdditionalPaidInCapitalOther>
+  <us-gaap:AdjustmentsToAdditionalPaidInCapitalOther decimals='INF' contextRef='D141201_151130_StEqComps-CommonStock' unitRef='USD'>0</us-gaap:AdjustmentsToAdditionalPaidInCapitalOther>
+  <us-gaap:AdjustmentsToAdditionalPaidInCapitalOther decimals='INF' contextRef='D141201_151130' unitRef='USD'>24480</us-gaap:AdjustmentsToAdditionalPaidInCapitalOther>
+  <us-gaap:OtherNonrecurringIncomeExpense decimals='INF' contextRef='D140506_141130' unitRef='USD'>1317</us-gaap:OtherNonrecurringIncomeExpense>
+  <us-gaap:OtherNonrecurringIncomeExpense decimals='INF' contextRef='D141201_151130' unitRef='USD'>23719</us-gaap:OtherNonrecurringIncomeExpense>
+  <us-gaap:Assets decimals='INF' contextRef='I141130' unitRef='USD'>7360</us-gaap:Assets>
+  <us-gaap:Assets decimals='INF' contextRef='I151130' unitRef='USD'>13641</us-gaap:Assets>
+  <us-gaap:CashAndCashEquivalentsAtCarryingValue decimals='INF' contextRef='I140505' unitRef='USD'>0</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+  <us-gaap:CashAndCashEquivalentsAtCarryingValue decimals='INF' contextRef='I141130' unitRef='USD'>6640</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+  <us-gaap:CashAndCashEquivalentsAtCarryingValue decimals='INF' contextRef='I151130' unitRef='USD'>13641</us-gaap:CashAndCashEquivalentsAtCarryingValue>
+  <us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease decimals='INF' contextRef='D140506_141130' unitRef='USD'>6640</us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease>
+  <us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease decimals='INF' contextRef='D141201_151130' unitRef='USD'>7001</us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease>
+  <us-gaap:CommonStockSharesAuthorized decimals='INF' contextRef='I141130' unitRef='Shares'>75000000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesAuthorized decimals='INF' contextRef='I151130' unitRef='Shares'>75000000</us-gaap:CommonStockSharesAuthorized>
+  <us-gaap:CommonStockSharesIssued decimals='INF' contextRef='I141130' unitRef='Shares'>8000000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesIssued decimals='INF' contextRef='I151130' unitRef='Shares'>10720000</us-gaap:CommonStockSharesIssued>
+  <us-gaap:CommonStockSharesOutstanding decimals='INF' contextRef='I141130' unitRef='Shares'>8000000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockSharesOutstanding decimals='INF' contextRef='I151130' unitRef='Shares'>10720000</us-gaap:CommonStockSharesOutstanding>
+  <us-gaap:CommonStockValue decimals='INF' contextRef='I141130' unitRef='USD'>8000</us-gaap:CommonStockValue>
+  <us-gaap:CommonStockValue decimals='INF' contextRef='I151130' unitRef='USD'>10720</us-gaap:CommonStockValue>
+  <us-gaap:DueToRelatedPartiesNoncurrent decimals='INF' contextRef='I141130' unitRef='USD'>677</us-gaap:DueToRelatedPartiesNoncurrent>
+  <us-gaap:DueToRelatedPartiesNoncurrent decimals='INF' contextRef='I151130' unitRef='USD'>3477</us-gaap:DueToRelatedPartiesNoncurrent>
+  <us-gaap:EarningsPerShareBasicAndDiluted decimals='INF' contextRef='D140506_141130' unitRef='UsdPerShare'>0</us-gaap:EarningsPerShareBasicAndDiluted>
+  <us-gaap:EarningsPerShareBasicAndDiluted decimals='INF' contextRef='D141201_151130' unitRef='UsdPerShare'>0</us-gaap:EarningsPerShareBasicAndDiluted>
+  <us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets decimals='INF' contextRef='D140506_141130' unitRef='USD'>-720</us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets>
+  <us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets decimals='INF' contextRef='D141201_151130' unitRef='USD'>720</us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets>
+  <us-gaap:Liabilities decimals='INF' contextRef='I141130' unitRef='USD'>677</us-gaap:Liabilities>
+  <us-gaap:Liabilities decimals='INF' contextRef='I151130' unitRef='USD'>3477</us-gaap:Liabilities>
+  <us-gaap:LiabilitiesAndStockholdersEquity decimals='INF' contextRef='I141130' unitRef='USD'>7360</us-gaap:LiabilitiesAndStockholdersEquity>
+  <us-gaap:LiabilitiesAndStockholdersEquity decimals='INF' contextRef='I151130' unitRef='USD'>13641</us-gaap:LiabilitiesAndStockholdersEquity>
+  <us-gaap:NetIncomeLoss decimals='INF' contextRef='D140506_141130_StEqComps-RetainedEarnings' unitRef='USD'>-1317</us-gaap:NetIncomeLoss>
+  <us-gaap:NetIncomeLoss decimals='INF' contextRef='D140506_141130' unitRef='USD'>-1317</us-gaap:NetIncomeLoss>
+  <us-gaap:NetIncomeLoss decimals='INF' contextRef='D141201_151130_StEqComps-RetainedEarnings' unitRef='USD'>-23719</us-gaap:NetIncomeLoss>
+  <us-gaap:NetIncomeLoss decimals='INF' contextRef='D141201_151130' unitRef='USD'>-23719</us-gaap:NetIncomeLoss>
+  <us-gaap:NetCashProvidedByUsedInFinancingActivities decimals='INF' contextRef='D140506_141130' unitRef='USD'>8677</us-gaap:NetCashProvidedByUsedInFinancingActivities>
+  <us-gaap:NetCashProvidedByUsedInFinancingActivities decimals='INF' contextRef='D141201_151130' unitRef='USD'>30000</us-gaap:NetCashProvidedByUsedInFinancingActivities>
+  <us-gaap:NetCashProvidedByUsedInInvestingActivities decimals='INF' contextRef='D140506_141130' unitRef='USD'>0</us-gaap:NetCashProvidedByUsedInInvestingActivities>
+  <us-gaap:NetCashProvidedByUsedInInvestingActivities decimals='INF' contextRef='D141201_151130' unitRef='USD'>0</us-gaap:NetCashProvidedByUsedInInvestingActivities>
+  <us-gaap:NetCashProvidedByUsedInOperatingActivities decimals='INF' contextRef='D140506_141130' unitRef='USD'>-2037</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+  <us-gaap:NetCashProvidedByUsedInOperatingActivities decimals='INF' contextRef='D141201_151130' unitRef='USD'>-22999</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+  <us-gaap:ProfitLoss decimals='INF' contextRef='D140506_141130' unitRef='USD'>-1317</us-gaap:ProfitLoss>
+  <us-gaap:ProfitLoss decimals='INF' contextRef='D141201_151130' unitRef='USD'>-23719</us-gaap:ProfitLoss>
+  <us-gaap:OperatingIncomeLoss decimals='INF' contextRef='D140506_141130' unitRef='USD'>-1317</us-gaap:OperatingIncomeLoss>
+  <us-gaap:OperatingIncomeLoss decimals='INF' contextRef='D141201_151130' unitRef='USD'>-23719</us-gaap:OperatingIncomeLoss>
+  <us-gaap:PrepaidExpenseCurrent decimals='INF' contextRef='I141130' unitRef='USD'>720</us-gaap:PrepaidExpenseCurrent>
+  <us-gaap:ProceedsFromContributionsFromAffiliates decimals='INF' contextRef='D140506_141130' unitRef='USD'>677</us-gaap:ProceedsFromContributionsFromAffiliates>
+  <us-gaap:ProceedsFromContributionsFromAffiliates decimals='INF' contextRef='D141201_151130' unitRef='USD'>2800</us-gaap:ProceedsFromContributionsFromAffiliates>
+  <us-gaap:ProceedsFromIssuanceOfCommonStock decimals='INF' contextRef='D140506_141130' unitRef='USD'>8000</us-gaap:ProceedsFromIssuanceOfCommonStock>
+  <us-gaap:ProceedsFromIssuanceOfCommonStock decimals='INF' contextRef='D141201_151130' unitRef='USD'>27200</us-gaap:ProceedsFromIssuanceOfCommonStock>
+  <us-gaap:RetainedEarningsAccumulatedDeficit decimals='INF' contextRef='I141130' unitRef='USD'>-1317</us-gaap:RetainedEarningsAccumulatedDeficit>
+  <us-gaap:RetainedEarningsAccumulatedDeficit decimals='INF' contextRef='I151130' unitRef='USD'>-25036</us-gaap:RetainedEarningsAccumulatedDeficit>
+  <us-gaap:Revenues decimals='INF' contextRef='D140506_141130' unitRef='USD'>0</us-gaap:Revenues>
+  <us-gaap:Revenues decimals='INF' contextRef='D141201_151130' unitRef='USD'>0</us-gaap:Revenues>
+  <us-gaap:StockIssuedDuringPeriodSharesOther decimals='INF' contextRef='D140506_141130_StEqComps-CommonStock' unitRef='Shares'>8000000</us-gaap:StockIssuedDuringPeriodSharesOther>
+  <us-gaap:StockIssuedDuringPeriodSharesOther decimals='INF' contextRef='D140506_141130' unitRef='Shares'>8000000</us-gaap:StockIssuedDuringPeriodSharesOther>
+  <us-gaap:StockIssuedDuringPeriodSharesOther decimals='INF' contextRef='D141201_151130_StEqComps-CommonStock' unitRef='Shares'>2720000</us-gaap:StockIssuedDuringPeriodSharesOther>
+  <us-gaap:StockIssuedDuringPeriodSharesOther decimals='INF' contextRef='D141201_151130' unitRef='Shares'>2720000</us-gaap:StockIssuedDuringPeriodSharesOther>
+  <us-gaap:SharesIssued decimals='INF' contextRef='I141130_StEqComps-CommonStock' unitRef='Shares'>8000000</us-gaap:SharesIssued>
+  <us-gaap:SharesIssued decimals='INF' contextRef='I141130' unitRef='Shares'>8000000</us-gaap:SharesIssued>
+  <us-gaap:SharesIssued decimals='INF' contextRef='I151130_StEqComps-CommonStock' unitRef='Shares'>10720000</us-gaap:SharesIssued>
+  <us-gaap:SharesIssued decimals='INF' contextRef='I151130' unitRef='Shares'>10720000</us-gaap:SharesIssued>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I141130_StEqComps-CommonStock' unitRef='USD'>8000</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I141130_StEqComps-RetainedEarnings' unitRef='USD'>-1317</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I141130' unitRef='USD'>6683</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I151130_StEqComps-AddPaidInCap' unitRef='USD'>24480</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I151130_StEqComps-CommonStock' unitRef='USD'>10720</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I151130_StEqComps-RetainedEarnings' unitRef='USD'>-25036</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquity decimals='INF' contextRef='I151130' unitRef='USD'>10164</us-gaap:StockholdersEquity>
+  <us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest decimals='INF' contextRef='I141130' unitRef='USD'>6683</us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest>
+  <us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest decimals='INF' contextRef='I151130' unitRef='USD'>10164</us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest>
+  <us-gaap:OperatingExpenses decimals='INF' contextRef='D140506_141130' unitRef='USD'>1317</us-gaap:OperatingExpenses>
+  <us-gaap:OperatingExpenses decimals='INF' contextRef='D141201_151130' unitRef='USD'>23719</us-gaap:OperatingExpenses>
+  <us-gaap:WeightedAverageNumberOfSharesOutstandingBasic decimals='INF' contextRef='D140506_141130' unitRef='Shares'>6277512</us-gaap:WeightedAverageNumberOfSharesOutstandingBasic>
+  <us-gaap:WeightedAverageNumberOfSharesOutstandingBasic decimals='INF' contextRef='D141201_151130' unitRef='Shares'>8815233</us-gaap:WeightedAverageNumberOfSharesOutstandingBasic>
+  <us-gaap:OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureAndSignificantAccountingPoliciesTextBlock contextRef='D141201_151130'>&lt;!--egx--&gt;&lt;p align=&quot;center&quot; style=&apos;text-align:center;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;b&gt;&lt;font lang=&quot;EN&quot;&gt;COSTO INC.&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p align=&quot;center&quot; style=&apos;text-align:center;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;b&gt;&lt;font lang=&quot;EN&quot;&gt;NOTES TO THE AUDITED FINANCIAL STATEMENTS &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p align=&quot;center&quot; style=&apos;text-align:center;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;b&gt;&lt;font lang=&quot;EN&quot;&gt;NOVEMBER 30, 2015&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p align=&quot;center&quot; style=&apos;text-align:center;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 1 - BASIS OF PRESENTATION&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Organization and Description of Business&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;COSTO INC. (the &amp;#147;Company&amp;#148;) was incorporated under the laws of the State of Nevada on May 6, 2014. The Company is in the development stage as defined under Financial Accounting Standards Board (&amp;#147;FASB&amp;#148;) Accounting Standards Codification (&amp;#147;ASC&amp;#148;) 915-205 &quot;Development-Stage Entities. Since Inception (May 6, 2014) through November 30, 2015 the Company has not generated any revenue and has accumulated losses of $25,036. &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 2 - GOING CONCERN&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The financial statements have been prepared on a going concern basis which assumes the Company will be able to realize its assets and discharge its liabilities in the normal course of business for the foreseeable future.&amp;nbsp; The Company has incurred a loss since Inception (May 6, 2014) resulting in an accumulated deficit of $25,036 as of November 30, 2015 and further losses are anticipated in the development of its business.&amp;nbsp; Accordingly, there is substantial doubt about the Company&amp;#146;s ability to continue as a going concern.&amp;nbsp; &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The ability to continue as a going concern is dependent upon the Company generating profitable operations in the future and/or to obtain the necessary financing to meet its obligations and repay its liabilities arising from normal business operations when they come due. Management intends to finance operating costs over the next twelve months with existing cash on hand and loans from directors and/or private placement of common stock.&amp;nbsp; &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 3 - SIGNIFICANT ACCOUNTING POLICIES AND RECENT ACCOUNTING PRONOUNCEMENTS&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Accounting Basis&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company uses the accrual basis of accounting and accounting principles generally accepted in the United States of America (&amp;#147;GAAP&amp;#148; accounting).&amp;nbsp;&amp;nbsp;The Company has adopted November 30 fiscal year end.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Cash and Cash Equivalents&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;For purposes of the statement of cash flows, the Company considers all highly liquid instruments purchased with an original maturity of three months or less to be cash equivalents.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company&apos;s bank accounts are deposited in insured institutions. The funds are insured up to $250,000. At November 30, 2015 the Company&apos;s bank deposits did not exceed the insured amounts.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Basic and Diluted Income (Loss) Per Share&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company computes loss per share in accordance with &amp;#147;ASC-260&amp;#148;, &amp;#147;Earnings per Share&amp;#148; which requires presentation of both basic and diluted earnings per share on the face of the statement of operations. Basic loss per share is computed by dividing net loss available to common shareholders by the weighted average number of outstanding common shares during the period. Diluted loss per share gives effect to all dilutive potential common shares outstanding during the period.&amp;nbsp; Dilutive loss per share excludes all potential common shares if their effect is anti-dilutive. There were no potentially dilutive debt or equity securities outstanding during the period from Inception (May 6, 2014) to November 30, 2015.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Dividends&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company has not adopted any policy regarding payment of dividends. No dividends have been paid during any of the periods shown.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Income Taxes&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company follows the liability method of accounting for income taxes.&amp;nbsp; Under this method, deferred income tax assets and liabilities are recognized for the estimated tax consequences attributable to differences between the financial statement carrying values and their respective income tax basis (temporary differences).&amp;nbsp; The effect on deferred income tax assets and liabilities of a change in tax rates is recognized in income in the period that includes the enactment date. &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Recent accounting pronouncements&lt;/font&gt;&lt;/u&gt;&lt;font lang=&quot;EN&quot;&gt; &lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 10pt;line-height:115%;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot; style=&apos;line-height:115%&apos;&gt;On June 10, 2014, the Financial Accounting Standards Board (&quot;FASB&quot;) issued update ASU 2014-10, Development Stage Entities (Topic 915).&amp;nbsp;&amp;nbsp;&amp;nbsp;Amongst other things, the amendments in this update removed the definition of development stage entity from Topic 915, thereby removing the distinction between development stage entities and other reporting entities from US GAAP.&amp;nbsp; In addition, the amendments eliminate the requirements for development stage entities to (1) present inception-to-date information on the statements of income, cash flows and shareholders equity, (2) label the financial statements as those of a development stage entity;&amp;nbsp; (3) disclose a description of the development stage activities in which the entity is engaged and (4) disclose in the first year in which the entity is no longer a development stage entity that in prior years it had been in the development stage.&amp;nbsp; The amendments are effective for annual reporting periods beginning after December 31, 2014 and interim reporting periods beginning after December 15, 2015, however entities are permitted to early adopt for any annual or interim reporting period for which the financial statements have yet to be issued.&amp;nbsp; The Company has elected to early adopt these amendments and accordingly have not labeled the financial statements as those of a development stage entity and have not presented inception-to-date information on the respective financial statements.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Advertising Costs&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company&amp;#146;s policy regarding advertising is to expense advertising when incurred. The Company incurred advertising expense of $0 during the period ended November 30, 2015.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Impairment of Long-Lived Assets&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company, when applicable, continually monitors events and changes in circumstances that could indicate carrying amounts of long-lived assets may not be recoverable. When such events or changes in circumstances are present, the Company assesses the recoverability of long-lived assets by determining whether the carrying value of such assets will be recovered through undiscounted expected future cash flows. If the total of the future cash flows is less than the carrying amount of those assets, the Company recognizes an impairment loss based on the excess of the carrying amount over the fair value of the assets. Assets to be disposed of are reported at the lower of the carrying amount or the fair value less costs to sell.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Use of Estimates&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The preparation of financial statements in conformity with generally accepted accounting principles requires management to make estimates and assumptions that affect the reported amounts of assets and liabilities and disclosure of contingent assets and liabilities at the date the financial statements and the reported amount of revenues and expenses during the reporting period.&amp;nbsp;&amp;nbsp;Actual results could differ from those estimates.&lt;/font&gt;&lt;/p&gt; &lt;p align=&quot;center&quot; style=&apos;text-align:center;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Stock-Based Compensation&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;As of November 30, 2015 the Company has not issued any stock-based payments to its employees.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;Stock-based compensation is accounted for at fair value in accordance with SFAS ASC 718, when applicable. To date, the Company has not adopted a stock option plan and has not granted any stock options.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;u&gt;&lt;font lang=&quot;EN&quot;&gt;Revenue Recognition&lt;/font&gt;&lt;/u&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company recognizes revenue when products are fully delivered or services have been provided and collection is reasonably assured. No revenue has been earned since inception.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 4 &amp;#150; CAPITAL STOCK&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company has 75,000,000 common shares authorized with a par value of $ 0.001 per share. On June 20, 2014 the Company issued 8,000,000 shares at $0.001 per share for total proceeds of $8,000. In August 2015 the Company issued 2,720,000 shares at $0.01 per share for total proceeds of $27,200.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;As of November 30, 2015, the Company had 10,720,000 shares issued and outstanding.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 5 &amp;#150; INCOME TAXES&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;As of November 30, 2015 the Company had net operating loss carry forwards of $25,036 that may be available to reduce future years&amp;#146; taxable income through 2035. Future tax benefits which may arise as a result of these losses have not been recognized in these financial statements, as their realization is determined not likely to occur and accordingly, the Company has recorded a valuation allowance for the deferred tax asset relating to these tax loss carry-forwards.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 6 &amp;#150; &lt;/font&gt;&lt;font lang=&quot;EN&quot;&gt;RELATED PARTY TRANSACTIONS&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;As of November 30, 2015, a Director had advance to us an amount of $3,477 by way of loan. The loan is non-interest bearing, due upon demand and unsecured.&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;NOTE 7 &amp;#150; &lt;/font&gt;&lt;font lang=&quot;EN&quot;&gt;SUBSEQUENT EVENTS&lt;/font&gt;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&amp;nbsp;&lt;/p&gt; &lt;p style=&apos;text-align:justify;margin:0in 0in 0pt;line-height:normal;text-autospace:&apos;&gt;&lt;font lang=&quot;EN&quot;&gt;The Company has evaluated subsequent events from November 30, 2015 through the date the financial statements were available to be issued and has determined that there have been no subsequent events after November 30, 2015 for which disclosure is required.&lt;/font&gt;&lt;/p&gt;</us-gaap:OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureAndSignificantAccountingPoliciesTextBlock>
+  <dei:DocumentType contextRef='D141201_151130'>10-K</dei:DocumentType>
+  <dei:DocumentPeriodEndDate contextRef='D141201_151130'>2015-11-30</dei:DocumentPeriodEndDate>
+  <dei:AmendmentFlag contextRef='D141201_151130'>false</dei:AmendmentFlag>
+  <dei:EntityRegistrantName contextRef='D141201_151130'>COSTO INC.</dei:EntityRegistrantName>
+  <dei:EntityCentralIndexKey contextRef='D141201_151130'>0001621199</dei:EntityCentralIndexKey>
+  <dei:TradingSymbol contextRef='D141201_151130'>csst</dei:TradingSymbol>
+  <dei:CurrentFiscalYearEndDate contextRef='D141201_151130'>--11-30</dei:CurrentFiscalYearEndDate>
+  <dei:EntityCommonStockSharesOutstanding decimals='INF' contextRef='I151130' unitRef='Shares'>10720000</dei:EntityCommonStockSharesOutstanding>
+  <dei:EntityPublicFloat decimals='INF' contextRef='I150531' unitRef='USD'>0</dei:EntityPublicFloat>
+  <dei:EntityFilerCategory contextRef='D141201_151130'>Smaller Reporting Company</dei:EntityFilerCategory>
+  <dei:EntityCurrentReportingStatus contextRef='D141201_151130'>No</dei:EntityCurrentReportingStatus>
+  <dei:EntityVoluntaryFilers contextRef='D141201_151130'>No</dei:EntityVoluntaryFilers>
+  <dei:EntityWellKnownSeasonedIssuer contextRef='D141201_151130'>No</dei:EntityWellKnownSeasonedIssuer>
+  <dei:DocumentFiscalYearFocus contextRef='D141201_151130'>2015</dei:DocumentFiscalYearFocus>
+  <dei:DocumentFiscalPeriodFocus contextRef='D141201_151130'>FY</dei:DocumentFiscalPeriodFocus>
+  <context id='I151130'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <instant>2015-11-30</instant>
+    </period>
+  </context>
+  <context id='D141201_151130'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <startDate>2014-12-01</startDate>
+      <endDate>2015-11-30</endDate>
+    </period>
+  </context>
+  <context id='I150531'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <instant>2015-05-31</instant>
+    </period>
+  </context>
+  <context id='I141130'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <instant>2014-11-30</instant>
+    </period>
+  </context>
+  <context id='D140506_141130'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <startDate>2014-05-06</startDate>
+      <endDate>2014-11-30</endDate>
+    </period>
+  </context>
+  <context id='D140506_141130_StEqComps-CommonStock'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:CommonStockMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <startDate>2014-05-06</startDate>
+      <endDate>2014-11-30</endDate>
+    </period>
+  </context>
+  <context id='D140506_141130_StEqComps-RetainedEarnings'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:RetainedEarningsMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <startDate>2014-05-06</startDate>
+      <endDate>2014-11-30</endDate>
+    </period>
+  </context>
+  <context id='I141130_StEqComps-CommonStock'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:CommonStockMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <instant>2014-11-30</instant>
+    </period>
+  </context>
+  <context id='I141130_StEqComps-RetainedEarnings'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:RetainedEarningsMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <instant>2014-11-30</instant>
+    </period>
+  </context>
+  <context id='D141201_151130_StEqComps-CommonStock'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:CommonStockMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <startDate>2014-12-01</startDate>
+      <endDate>2015-11-30</endDate>
+    </period>
+  </context>
+  <context id='D141201_151130_StEqComps-AddPaidInCap'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <startDate>2014-12-01</startDate>
+      <endDate>2015-11-30</endDate>
+    </period>
+  </context>
+  <context id='D141201_151130_StEqComps-RetainedEarnings'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:RetainedEarningsMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <startDate>2014-12-01</startDate>
+      <endDate>2015-11-30</endDate>
+    </period>
+  </context>
+  <context id='I151130_StEqComps-CommonStock'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:CommonStockMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <instant>2015-11-30</instant>
+    </period>
+  </context>
+  <context id='I151130_StEqComps-AddPaidInCap'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <instant>2015-11-30</instant>
+    </period>
+  </context>
+  <context id='I151130_StEqComps-RetainedEarnings'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+      <segment><xbrldi:explicitMember dimension='us-gaap:StatementEquityComponentsAxis'>us-gaap:RetainedEarningsMember</xbrldi:explicitMember></segment>
+    </entity>
+    <period>
+      <instant>2015-11-30</instant>
+    </period>
+  </context>
+  <context id='I140505'>
+    <entity>
+      <identifier scheme='http://www.sec.gov/CIK'>0001621199</identifier>
+    </entity>
+    <period>
+      <instant>2014-05-05</instant>
+    </period>
+  </context>
+  <unit id='Shares'>
+    <measure>shares</measure>
+  </unit>
+  <unit id='USD'>
+    <measure>iso4217:USD</measure>
+  </unit>
+  <unit id='UsdPerShare'>
+    <divide>
+      <unitNumerator>
+        <measure>iso4217:USD</measure>
+      </unitNumerator>
+      <unitDenominator>
+        <measure>shares</measure>
+      </unitDenominator>
+    </divide>
+  </unit>
+</xbrl>

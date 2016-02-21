@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="US-ASCII" ?>
+    <!-- Field: Doc-Info; Name: Generator; Value: GoFiler Complete; Version: 4.9c -->
+    <!-- Field: Doc-Info; Name: VendorURI; Value: http://www.novaworks.co -->
+    <!-- Field: Doc-Info; Name: Source; Value: taci_2014dec31%2D10k.xfr; Date: 2016%2D01%2D07T03:09:48Z -->
+    <!-- Field: Doc-Info; Name: Status; Value: 0x00000000 -->
+<xbrli:xbrl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:dei="http://xbrl.sec.gov/dei/2014-01-31" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:iso4217="http://www.xbrl.org/2003/iso4217" xmlns:us-gaap="http://fasb.org/us-gaap/2015-01-31" xmlns:us-roles="http://fasb.org/us-roles/2015-01-31" xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric" xmlns:num="http://www.xbrl.org/dtr/type/numeric" xmlns:us-types="http://fasb.org/us-types/2015-01-31" xmlns:TACI="http://transcapinc.com/20141231">
+    <link:schemaRef xlink:href="taci-20141231.xsd" xlink:type="simple" />
+    <xbrli:context id="From2014-01-01to2014-12-31">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2016-01-06">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2016-01-06</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2012-12-31">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2012-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_TopAlphaCapitalLtdNote1Member">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdNote1Member</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_custom_TopAlphaCapitalLtdNote1Member">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdNote1Member</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_custom_TopAlphaCapitalLtdNote1Member">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdNote1Member</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-21to2014-05-22_custom_NFASecuritesLLCMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:NFASecuritesLLCMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-21</xbrli:startDate>
+        <xbrli:endDate>2014-05-22</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-21to2014-05-22_custom_IMIRManagementLLCMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:IMIRManagementLLCMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-21</xbrli:startDate>
+        <xbrli:endDate>2014-05-22</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-21to2014-05-22_custom_FrictionAndHeatLLCMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:FrictionAndHeatLLCMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-21</xbrli:startDate>
+        <xbrli:endDate>2014-05-22</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">us-gaap:ConvertibleDebtMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-21</xbrli:startDate>
+        <xbrli:endDate>2014-05-22</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-05-22_us-gaap_ConvertibleDebtMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">us-gaap:ConvertibleDebtMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-05-22</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-05-22_custom_TopAlphaCapitalLtdConsultingAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdConsultingAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-05-22</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-21to2014-05-22_custom_TopAlphaCapitalLtdMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-21</xbrli:startDate>
+        <xbrli:endDate>2014-05-22</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-05-22_custom_TopAlphaCapitalLtdMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-05-22</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-05-23to2014-05-24">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-05-23</xbrli:startDate>
+        <xbrli:endDate>2014-05-24</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-05-22">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-05-22</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-05-24">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-05-24</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_CommonStockMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2012-12-31_us-gaap_CommonStockMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2012-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_us-gaap_CommonStockMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_us-gaap_CommonStockMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:CommonStockMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_us-gaap_AdditionalPaidInCapitalMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_AdditionalPaidInCapitalMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2012-12-31_us-gaap_AdditionalPaidInCapitalMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2012-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_us-gaap_AdditionalPaidInCapitalMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_us-gaap_AdditionalPaidInCapitalMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:AdditionalPaidInCapitalMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_us-gaap_RetainedEarningsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_RetainedEarningsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2012-12-31_us-gaap_RetainedEarningsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2012-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_us-gaap_RetainedEarningsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_us-gaap_RetainedEarningsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">us-gaap:RetainedEarningsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_TopAlphaConsultingAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:TopAlphaConsultingAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_custom_TopAlphaConsultingAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:TopAlphaConsultingAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_PoratEmploymentAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:PoratEmploymentAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_custom_PoratEmploymentAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:PoratEmploymentAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_custom_PoratEmploymentAgreementMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:PoratEmploymentAgreementMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_TopAlphaConvertiblePromissoryNoteMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:TopAlphaConvertiblePromissoryNoteMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_NFASecuritiesL3CMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:NFASecuritiesL3CMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_custom_NFASecuritiesL3CMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:NFASecuritiesL3CMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_NFASenecaL3CMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:RelatedPartyTransactionsByRelatedPartyAxis">TACI:NFASenecaL3CMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2012-06-30_custom_TopAlphaCapitalLtdNote1Member">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdNote1Member</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2012-06-30</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_custom_TopAlphaCapitalLtdNote1Member">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">TACI:TopAlphaCapitalLtdNote1Member</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_ConvertibleDebtMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">us-gaap:ConvertibleDebtMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-12-31_us-gaap_ConvertibleDebtMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:DebtConversionByUniqueDescriptionAxis">us-gaap:ConvertibleDebtMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2013-12-31_us-gaap_ScenarioPreviouslyReportedMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:AdjustmentsForChangeInAccountingPrincipleAxis">us-gaap:ScenarioPreviouslyReportedMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2013-12-31</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_custom_SharesMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:AdjustmentsForChangeInAccountingPrincipleAxis">TACI:SharesMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_InternalRevenueServiceIRSMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:IncomeTaxAuthorityNameAxis">us-gaap:InternalRevenueServiceIRSMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_us-gaap_InternalRevenueServiceIRSMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:IncomeTaxAuthorityNameAxis">us-gaap:InternalRevenueServiceIRSMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2014-01-01to2014-12-31_us-gaap_NonUsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:IncomeTaxAuthorityNameAxis">us-gaap:NonUsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2014-01-01</xbrli:startDate>
+        <xbrli:endDate>2014-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2013-01-01to2013-12-31_us-gaap_NonUsMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:IncomeTaxAuthorityNameAxis">us-gaap:NonUsMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2013-01-01</xbrli:startDate>
+        <xbrli:endDate>2013-12-31</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="From2015-03-05to2015-03-06_us-gaap_SubsequentEventMember">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+        <xbrli:segment>
+          <xbrldi:explicitMember dimension="us-gaap:SubsequentEventTypeAxis">us-gaap:SubsequentEventMember</xbrldi:explicitMember>
+        </xbrli:segment>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:startDate>2015-03-05</xbrli:startDate>
+        <xbrli:endDate>2015-03-06</xbrli:endDate>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:context id="AsOf2014-06-30">
+      <xbrli:entity>
+        <xbrli:identifier scheme="http://www.sec.gov/CIK">0001228386</xbrli:identifier>
+      </xbrli:entity>
+      <xbrli:period>
+        <xbrli:instant>2014-06-30</xbrli:instant>
+      </xbrli:period>
+    </xbrli:context>
+    <xbrli:unit id="USD">
+      <xbrli:measure>iso4217:USD</xbrli:measure>
+    </xbrli:unit>
+    <xbrli:unit id="Shares">
+      <xbrli:measure>xbrli:shares</xbrli:measure>
+    </xbrli:unit>
+    <xbrli:unit id="USDPShares">
+      <xbrli:divide>
+        <xbrli:unitNumerator>
+          <xbrli:measure>iso4217:USD</xbrli:measure>
+        </xbrli:unitNumerator>
+        <xbrli:unitDenominator>
+          <xbrli:measure>xbrli:shares</xbrli:measure>
+        </xbrli:unitDenominator>
+      </xbrli:divide>
+    </xbrli:unit>
+    <xbrli:unit id="Pure">
+      <xbrli:measure>xbrli:pure</xbrli:measure>
+    </xbrli:unit>
+    <dei:EntityRegistrantName contextRef="From2014-01-01to2014-12-31">TRANSATLANTIC CAPITAL INC.</dei:EntityRegistrantName>
+    <dei:EntityCentralIndexKey contextRef="From2014-01-01to2014-12-31">0001228386</dei:EntityCentralIndexKey>
+    <dei:DocumentType contextRef="From2014-01-01to2014-12-31">10-K</dei:DocumentType>
+    <dei:DocumentPeriodEndDate contextRef="From2014-01-01to2014-12-31">2014-12-31</dei:DocumentPeriodEndDate>
+    <dei:AmendmentFlag contextRef="From2014-01-01to2014-12-31">false</dei:AmendmentFlag>
+    <dei:CurrentFiscalYearEndDate contextRef="From2014-01-01to2014-12-31">--12-31</dei:CurrentFiscalYearEndDate>
+    <dei:EntityWellKnownSeasonedIssuer contextRef="From2014-01-01to2014-12-31">No</dei:EntityWellKnownSeasonedIssuer>
+    <dei:EntityVoluntaryFilers contextRef="From2014-01-01to2014-12-31">No</dei:EntityVoluntaryFilers>
+    <dei:EntityCurrentReportingStatus contextRef="From2014-01-01to2014-12-31">No</dei:EntityCurrentReportingStatus>
+    <dei:EntityFilerCategory contextRef="From2014-01-01to2014-12-31">Smaller Reporting Company</dei:EntityFilerCategory>
+    <dei:DocumentFiscalPeriodFocus contextRef="From2014-01-01to2014-12-31">FY</dei:DocumentFiscalPeriodFocus>
+    <dei:DocumentFiscalYearFocus contextRef="From2014-01-01to2014-12-31">2014</dei:DocumentFiscalYearFocus>
+    <dei:EntityCommonStockSharesOutstanding contextRef="AsOf2016-01-06" unitRef="Shares" decimals="INF">21365622</dei:EntityCommonStockSharesOutstanding>
+    <us-gaap:Assets contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">0</us-gaap:Assets>
+    <us-gaap:Assets contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">793</us-gaap:Assets>
+    <us-gaap:LiabilitiesCurrent contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">144968</us-gaap:LiabilitiesCurrent>
+    <us-gaap:LiabilitiesCurrent contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">277932</us-gaap:LiabilitiesCurrent>
+    <us-gaap:LiabilitiesAndStockholdersEquity contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">0</us-gaap:LiabilitiesAndStockholdersEquity>
+    <us-gaap:LiabilitiesAndStockholdersEquity contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">793</us-gaap:LiabilitiesAndStockholdersEquity>
+    <us-gaap:AccountsReceivableNetCurrent contextRef="AsOf2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:AccountsReceivableNetCurrent contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">793</us-gaap:AccountsReceivableNetCurrent>
+    <us-gaap:AssetsCurrent contextRef="AsOf2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:AssetsCurrent contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">793</us-gaap:AssetsCurrent>
+    <us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">74813</us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent>
+    <us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">2750</us-gaap:AccountsPayableAndAccruedLiabilitiesCurrent>
+    <us-gaap:Liabilities contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">144968</us-gaap:Liabilities>
+    <us-gaap:Liabilities contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">277932</us-gaap:Liabilities>
+    <us-gaap:CommonStockValue contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">20366</us-gaap:CommonStockValue>
+    <us-gaap:CommonStockValue contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">300</us-gaap:CommonStockValue>
+    <us-gaap:AdditionalPaidInCapital contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">5610968</us-gaap:AdditionalPaidInCapital>
+    <us-gaap:AdditionalPaidInCapital contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">5186328</us-gaap:AdditionalPaidInCapital>
+    <us-gaap:AdditionalPaidInCapital contextRef="AsOf2013-12-31_us-gaap_ScenarioPreviouslyReportedMember" unitRef="USD" decimals="0">4291101</us-gaap:AdditionalPaidInCapital>
+    <us-gaap:RetainedEarningsAccumulatedDeficit contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">-5776302</us-gaap:RetainedEarningsAccumulatedDeficit>
+    <us-gaap:RetainedEarningsAccumulatedDeficit contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">-5463767</us-gaap:RetainedEarningsAccumulatedDeficit>
+    <us-gaap:StockholdersEquity contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">-144968</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">-277139</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2012-12-31" unitRef="USD" decimals="0">-164719</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2012-12-31_us-gaap_CommonStockMember" unitRef="USD" decimals="0">300</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2013-12-31_us-gaap_CommonStockMember" unitRef="USD" decimals="0">300</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2014-12-31_us-gaap_CommonStockMember" unitRef="USD" decimals="0">20366</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2012-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">4276244</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2013-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">5186328</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2014-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">5610968</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2012-12-31_us-gaap_RetainedEarningsMember" unitRef="USD" decimals="0">-4441263</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2013-12-31_us-gaap_RetainedEarningsMember" unitRef="USD" decimals="0">-5463767</us-gaap:StockholdersEquity>
+    <us-gaap:StockholdersEquity contextRef="AsOf2014-12-31_us-gaap_RetainedEarningsMember" unitRef="USD" decimals="0">-5776302</us-gaap:StockholdersEquity>
+    <us-gaap:CommonStockParOrStatedValuePerShare contextRef="AsOf2014-12-31" unitRef="USDPShares" decimals="INF">0.001</us-gaap:CommonStockParOrStatedValuePerShare>
+    <us-gaap:CommonStockParOrStatedValuePerShare contextRef="AsOf2013-12-31" unitRef="USDPShares" decimals="INF">0.001</us-gaap:CommonStockParOrStatedValuePerShare>
+    <us-gaap:CommonStockParOrStatedValuePerShare contextRef="AsOf2014-05-22" unitRef="USDPShares" decimals="INF">0.01</us-gaap:CommonStockParOrStatedValuePerShare>
+    <us-gaap:CommonStockSharesAuthorized contextRef="AsOf2014-12-31" unitRef="Shares" decimals="INF">700000000</us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:CommonStockSharesAuthorized contextRef="AsOf2013-12-31" unitRef="Shares" decimals="INF">700000000</us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:CommonStockSharesAuthorized contextRef="AsOf2014-05-22" unitRef="Shares" decimals="INF">700000000</us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:CommonStockSharesAuthorized contextRef="AsOf2014-05-24" unitRef="Shares" decimals="INF">700000000</us-gaap:CommonStockSharesAuthorized>
+    <us-gaap:CommonStockSharesIssued contextRef="AsOf2014-12-31" unitRef="Shares" decimals="INF">20365622</us-gaap:CommonStockSharesIssued>
+    <us-gaap:CommonStockSharesIssued contextRef="AsOf2013-12-31" unitRef="Shares" decimals="INF">299835</us-gaap:CommonStockSharesIssued>
+    <us-gaap:CommonStockSharesOutstanding contextRef="AsOf2014-12-31" unitRef="Shares" decimals="INF">20365622</us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:CommonStockSharesOutstanding contextRef="AsOf2013-12-31" unitRef="Shares" decimals="INF">299835</us-gaap:CommonStockSharesOutstanding>
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="AsOf2014-12-31" unitRef="USDPShares" decimals="INF">0.001</us-gaap:PreferredStockParOrStatedValuePerShare>
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="AsOf2013-12-31" unitRef="USDPShares" decimals="INF">0.001</us-gaap:PreferredStockParOrStatedValuePerShare>
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="AsOf2014-05-22" unitRef="USDPShares" xsi:nil="true" />
+    <us-gaap:PreferredStockParOrStatedValuePerShare contextRef="AsOf2014-05-24" unitRef="USDPShares" decimals="INF">0.001</us-gaap:PreferredStockParOrStatedValuePerShare>
+    <us-gaap:PreferredStockSharesAuthorized contextRef="AsOf2014-12-31" unitRef="Shares" decimals="INF">50000000</us-gaap:PreferredStockSharesAuthorized>
+    <us-gaap:PreferredStockSharesAuthorized contextRef="AsOf2013-12-31" unitRef="Shares" decimals="INF">50000000</us-gaap:PreferredStockSharesAuthorized>
+    <us-gaap:PreferredStockSharesAuthorized contextRef="AsOf2014-05-24" unitRef="Shares" decimals="INF">50000000</us-gaap:PreferredStockSharesAuthorized>
+    <us-gaap:PreferredStockSharesIssued contextRef="AsOf2014-12-31" unitRef="Shares" xsi:nil="true" />
+    <us-gaap:PreferredStockSharesIssued contextRef="AsOf2013-12-31" unitRef="Shares" xsi:nil="true" />
+    <us-gaap:PreferredStockSharesOutstanding contextRef="AsOf2014-12-31" unitRef="Shares" xsi:nil="true" />
+    <us-gaap:PreferredStockSharesOutstanding contextRef="AsOf2013-12-31" unitRef="Shares" xsi:nil="true" />
+    <us-gaap:DebtConversionConvertedInstrumentAmount1 contextRef="From2014-05-21to2014-05-22_custom_TopAlphaCapitalLtdMember" unitRef="USD" decimals="0">9868</us-gaap:DebtConversionConvertedInstrumentAmount1>
+    <us-gaap:DebtConversionConvertedInstrumentAmount1 contextRef="From2015-03-05to2015-03-06_us-gaap_SubsequentEventMember" unitRef="USD" decimals="0">1000</us-gaap:DebtConversionConvertedInstrumentAmount1>
+    <us-gaap:IncomeLossFromContinuingOperations contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">-312535</us-gaap:IncomeLossFromContinuingOperations>
+    <TACI:NetCapitalDeficiency contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">-144968</TACI:NetCapitalDeficiency>
+    <us-gaap:OfficersCompensation contextRef="From2014-01-01to2014-12-31_custom_PoratEmploymentAgreementMember" unitRef="USD" decimals="0">33901</us-gaap:OfficersCompensation>
+    <us-gaap:ProfessionalAndContractServicesExpense contextRef="From2014-01-01to2014-12-31_custom_TopAlphaConsultingAgreementMember" unitRef="USD" decimals="0">6449</us-gaap:ProfessionalAndContractServicesExpense>
+    <us-gaap:ProfessionalAndContractServicesExpense contextRef="From2014-01-01to2014-12-31_custom_NFASenecaL3CMember" unitRef="USD" decimals="0">28000</us-gaap:ProfessionalAndContractServicesExpense>
+    <us-gaap:ProceedsFromRelatedPartyDebt contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">69155</us-gaap:ProceedsFromRelatedPartyDebt>
+    <us-gaap:ProceedsFromRelatedPartyDebt contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:DebtConversionOriginalDebtInterestRateOfDebt contextRef="From2014-01-01to2014-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="Pure" decimals="INF">0.06</us-gaap:DebtConversionOriginalDebtInterestRateOfDebt>
+    <us-gaap:DebtConversionOriginalDebtInterestRateOfDebt contextRef="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember" unitRef="Pure" decimals="INF">0.06</us-gaap:DebtConversionOriginalDebtInterestRateOfDebt>
+    <us-gaap:DebtConversionOriginalDebtInterestRateOfDebt contextRef="From2014-01-01to2014-12-31_us-gaap_ConvertibleDebtMember" unitRef="Pure" decimals="INF">0.05</us-gaap:DebtConversionOriginalDebtInterestRateOfDebt>
+    <us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear contextRef="From2014-01-01to2014-12-31_custom_TopAlphaCapitalLtdNote1Member">2013-12</us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear>
+    <us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear contextRef="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember">2014-05</us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear>
+    <us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear contextRef="From2014-01-01to2014-12-31_us-gaap_ConvertibleDebtMember">2014-05</us-gaap:DebtConversionConvertedInstrumentIssuanceDateMonthAndYear>
+    <us-gaap:DebtInstrumentFaceAmount contextRef="AsOf2013-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">103339</us-gaap:DebtInstrumentFaceAmount>
+    <us-gaap:DebtInstrumentFaceAmount contextRef="AsOf2014-05-22_custom_TopAlphaCapitalLtdConsultingAgreementMember" unitRef="USD" decimals="0">147464</us-gaap:DebtInstrumentFaceAmount>
+    <us-gaap:DebtInstrumentFaceAmount contextRef="AsOf2014-05-22_custom_TopAlphaCapitalLtdMember" unitRef="USD" decimals="0">109174</us-gaap:DebtInstrumentFaceAmount>
+    <us-gaap:DebtInstrumentFaceAmount contextRef="AsOf2012-06-30_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">62255</us-gaap:DebtInstrumentFaceAmount>
+    <us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear contextRef="From2014-01-01to2014-12-31_custom_TopAlphaCapitalLtdNote1Member">2014-12-31</us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear>
+    <us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear contextRef="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember">2014-12-31</us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear>
+    <us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear contextRef="From2014-01-01to2014-12-31_us-gaap_ConvertibleDebtMember">2014-11-22</us-gaap:DebtConversionConvertedInstrumentExpirationOrDueDateDayMonthAndYear>
+    <us-gaap:CommonStockConversionBasis contextRef="From2014-01-01to2014-12-31_custom_TopAlphaCapitalLtdNote1Member">one share for $2.480745 of principal</us-gaap:CommonStockConversionBasis>
+    <us-gaap:DebtInstrumentConvertibleConversionPrice1 contextRef="AsOf2014-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USDPShares" decimals="INF">0.15</us-gaap:DebtInstrumentConvertibleConversionPrice1>
+    <us-gaap:DebtInstrumentConvertibleConversionPrice1 contextRef="AsOf2014-05-22_us-gaap_ConvertibleDebtMember" unitRef="USDPShares" decimals="INF">0.15</us-gaap:DebtInstrumentConvertibleConversionPrice1>
+    <us-gaap:DebtInstrumentConvertibleConversionPrice1 contextRef="AsOf2014-12-31_us-gaap_ConvertibleDebtMember" unitRef="USDPShares" decimals="INF">0.001</us-gaap:DebtInstrumentConvertibleConversionPrice1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-05-21to2014-05-22_custom_NFASecuritesLLCMember" unitRef="Shares" decimals="INF">13333333</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-05-21to2014-05-22_custom_IMIRManagementLLCMember" unitRef="Shares" decimals="INF">6666667</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-05-21to2014-05-22_custom_FrictionAndHeatLLCMember" unitRef="Shares" decimals="INF">1000000</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember" unitRef="Shares" decimals="INF">21000000</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-05-21to2014-05-22_custom_TopAlphaCapitalLtdMember" unitRef="Shares" decimals="INF">65787</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-01-01to2014-12-31_us-gaap_CommonStockMember" unitRef="Shares" decimals="INF">20065787</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-01-01to2014-12-31_us-gaap_ConvertibleDebtMember" unitRef="Shares" decimals="INF">20000000</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2014-01-01to2014-12-31_custom_SharesMember" unitRef="Shares" decimals="INF">20065787</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:DebtConversionConvertedInstrumentSharesIssued1 contextRef="From2015-03-05to2015-03-06_us-gaap_SubsequentEventMember" unitRef="Shares" decimals="INF">1000000</us-gaap:DebtConversionConvertedInstrumentSharesIssued1>
+    <us-gaap:StockholdersEquityReverseStockSplit contextRef="From2014-05-23to2014-05-24">150 to 1</us-gaap:StockholdersEquityReverseStockSplit>
+    <us-gaap:StockholdersEquityNoteChangesInCapitalStructureSubsequentChangesToNumberOfCommonShares contextRef="From2014-05-23to2014-05-24" unitRef="Shares" decimals="INF">750000000</us-gaap:StockholdersEquityNoteChangesInCapitalStructureSubsequentChangesToNumberOfCommonShares>
+    <us-gaap:ConvertibleDebt contextRef="AsOf2014-05-22_us-gaap_ConvertibleDebtMember" unitRef="USD" decimals="0">21000</us-gaap:ConvertibleDebt>
+    <us-gaap:ConvertibleDebt contextRef="AsOf2014-05-22_custom_TopAlphaCapitalLtdMember" unitRef="USD" decimals="0">21000</us-gaap:ConvertibleDebt>
+    <us-gaap:ConvertibleDebt contextRef="AsOf2014-12-31_us-gaap_ConvertibleDebtMember" unitRef="USD" decimals="0">20000</us-gaap:ConvertibleDebt>
+    <TACI:CommonStockSharesIssuedBeforeSplit contextRef="AsOf2014-05-22" unitRef="Shares" decimals="INF">29216990</TACI:CommonStockSharesIssuedBeforeSplit>
+    <dei:EntityPublicFloat contextRef="AsOf2014-06-30" unitRef="USD" decimals="0">1096000</dei:EntityPublicFloat>
+    <us-gaap:ConvertibleNotesPayableCurrent contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">1000</us-gaap:ConvertibleNotesPayableCurrent>
+    <us-gaap:ConvertibleNotesPayableCurrent contextRef="AsOf2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:AccountsPayableRelatedPartiesCurrent contextRef="AsOf2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:AccountsPayableRelatedPartiesCurrent contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">275182</us-gaap:AccountsPayableRelatedPartiesCurrent>
+    <us-gaap:AccountsPayableRelatedPartiesCurrent contextRef="AsOf2013-12-31_custom_TopAlphaConsultingAgreementMember" unitRef="USD" decimals="0">141015</us-gaap:AccountsPayableRelatedPartiesCurrent>
+    <us-gaap:AccountsPayableRelatedPartiesCurrent contextRef="AsOf2013-12-31_custom_PoratEmploymentAgreementMember" unitRef="USD" decimals="0">134167</us-gaap:AccountsPayableRelatedPartiesCurrent>
+    <us-gaap:DueToRelatedPartiesCurrent contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">69155</us-gaap:DueToRelatedPartiesCurrent>
+    <us-gaap:GeneralAndAdministrativeExpense contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">179759</us-gaap:GeneralAndAdministrativeExpense>
+    <us-gaap:GeneralAndAdministrativeExpense contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">232175</us-gaap:GeneralAndAdministrativeExpense>
+    <us-gaap:OperatingExpenses contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">179759</us-gaap:OperatingExpenses>
+    <us-gaap:OperatingExpenses contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">232175</us-gaap:OperatingExpenses>
+    <us-gaap:OperatingIncomeLoss contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">-179759</us-gaap:OperatingIncomeLoss>
+    <us-gaap:OperatingIncomeLoss contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">-232175</us-gaap:OperatingIncomeLoss>
+    <us-gaap:InterestExpenseBeneficialInterestsIssuedByConsolidatedVariableInterestEntities contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">130174</us-gaap:InterestExpenseBeneficialInterestsIssuedByConsolidatedVariableInterestEntities>
+    <us-gaap:InterestExpenseBeneficialInterestsIssuedByConsolidatedVariableInterestEntities contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">786053</us-gaap:InterestExpenseBeneficialInterestsIssuedByConsolidatedVariableInterestEntities>
+    <us-gaap:NetIncomeLoss contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">-312535</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">-1022504</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2013-01-01to2013-12-31_us-gaap_RetainedEarningsMember" unitRef="USD" decimals="0">-1022504</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2014-01-01to2014-12-31_us-gaap_RetainedEarningsMember" unitRef="USD" decimals="0">-312535</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2014-01-01to2014-12-31_us-gaap_InternalRevenueServiceIRSMember" unitRef="USD" decimals="0">-312535</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2013-01-01to2013-12-31_us-gaap_InternalRevenueServiceIRSMember" unitRef="USD" decimals="0">-1018407</us-gaap:NetIncomeLoss>
+    <us-gaap:NetIncomeLoss contextRef="From2013-01-01to2013-12-31_us-gaap_NonUsMember" unitRef="USD" decimals="0">-4097</us-gaap:NetIncomeLoss>
+    <us-gaap:EarningsPerShareBasicAndDiluted contextRef="From2014-01-01to2014-12-31" unitRef="USDPShares" decimals="INF">-0.04</us-gaap:EarningsPerShareBasicAndDiluted>
+    <us-gaap:EarningsPerShareBasicAndDiluted contextRef="From2013-01-01to2013-12-31" unitRef="USDPShares" decimals="INF">-3.41</us-gaap:EarningsPerShareBasicAndDiluted>
+    <us-gaap:WeightedAverageNumberOfShareOutstandingBasicAndDiluted contextRef="From2014-01-01to2014-12-31" unitRef="Shares" decimals="INF">8230259</us-gaap:WeightedAverageNumberOfShareOutstandingBasicAndDiluted>
+    <us-gaap:WeightedAverageNumberOfShareOutstandingBasicAndDiluted contextRef="From2013-01-01to2013-12-31" unitRef="Shares" decimals="INF">299835</us-gaap:WeightedAverageNumberOfShareOutstandingBasicAndDiluted>
+    <us-gaap:InterestExpense contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">2602</us-gaap:InterestExpense>
+    <us-gaap:InterestExpense contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">4276</us-gaap:InterestExpense>
+    <us-gaap:InterestExpenseRelatedParty contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:InterestExpenseRelatedParty contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">4276</us-gaap:InterestExpenseRelatedParty>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">-69155</us-gaap:NetCashProvidedByUsedInOperatingActivities>
+    <us-gaap:NetCashProvidedByUsedInOperatingActivities contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:InterestPaid contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:InterestPaid contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:IncomeTaxesPaid contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:IncomeTaxesPaid contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:Depreciation contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:Depreciation contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">4097</us-gaap:Depreciation>
+    <us-gaap:IncreaseDecreaseInAccountsReceivable contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">793</us-gaap:IncreaseDecreaseInAccountsReceivable>
+    <us-gaap:IncreaseDecreaseInAccountsReceivable contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:IncreaseDecreaseInAccountsPayableRelatedParties contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">112413</us-gaap:IncreaseDecreaseInAccountsPayableRelatedParties>
+    <us-gaap:IncreaseDecreaseInAccountsPayableRelatedParties contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">228078</us-gaap:IncreaseDecreaseInAccountsPayableRelatedParties>
+    <us-gaap:CashAndCashEquivalentsAtCarryingValue contextRef="AsOf2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CashAndCashEquivalentsAtCarryingValue contextRef="AsOf2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CashAndCashEquivalentsAtCarryingValue contextRef="AsOf2012-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:NetCashProvidedByUsedInFinancingActivities contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">69155</us-gaap:NetCashProvidedByUsedInFinancingActivities>
+    <us-gaap:NetCashProvidedByUsedInFinancingActivities contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:StockIssued1 contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">29868</us-gaap:StockIssued1>
+    <us-gaap:StockIssued1 contextRef="From2014-01-01to2014-12-31_us-gaap_CommonStockMember" unitRef="USD" decimals="0">20066</us-gaap:StockIssued1>
+    <us-gaap:StockIssued1 contextRef="From2014-01-01to2014-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">9802</us-gaap:StockIssued1>
+    <us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">21000</us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature>
+    <us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">910084</us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature>
+    <us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature contextRef="From2013-01-01to2013-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">910084</us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature>
+    <us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature contextRef="From2014-01-01to2014-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">21000</us-gaap:DebtInstrumentConvertibleBeneficialConversionFeature>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">393838</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-05-21to2014-05-22_us-gaap_ConvertibleDebtMember" unitRef="USD" decimals="0">78306</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-01-01to2014-12-31_us-gaap_AdditionalPaidInCapitalMember" unitRef="USD" decimals="0">393838</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-01-01to2014-12-31_custom_TopAlphaConsultingAgreementMember" unitRef="USD" decimals="0">147464</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-01-01to2014-12-31_custom_PoratEmploymentAgreementMember" unitRef="USD" decimals="0">168068</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:DebtInstrumentDecreaseForgiveness contextRef="From2014-01-01to2014-12-31_custom_TopAlphaConvertiblePromissoryNoteMember" unitRef="USD" decimals="0">78306</us-gaap:DebtInstrumentDecreaseForgiveness>
+    <us-gaap:SharesIssued contextRef="AsOf2012-12-31_us-gaap_CommonStockMember" unitRef="Shares" decimals="INF">299835</us-gaap:SharesIssued>
+    <us-gaap:SharesIssued contextRef="AsOf2013-12-31_us-gaap_CommonStockMember" unitRef="Shares" decimals="INF">299835</us-gaap:SharesIssued>
+    <us-gaap:SharesIssued contextRef="AsOf2014-12-31_us-gaap_CommonStockMember" unitRef="Shares" decimals="INF">20365622</us-gaap:SharesIssued>
+    <us-gaap:OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 1 - ORGANIZATION&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Organization and Line of Business&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Transatlantic Capital Inc. was incorporated&#13;on May 22, 2002, under the laws of the State of Nevada, as Medina International Corp. On May 4, 2006, the Company changed its name&#13;to ACRO Inc., and again on May 24, 2014 to Transatlantic Capital Inc.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company was originally an oil and&#13;gas consulting company in Canada and the United States that later shifted operations to Israel to engage in development of products&#13;for the detection of military and commercial explosives for the homeland security market. On May 24, 2014 a change of control took&#13;place and the Company changed its business model to develop and manage real estate. As a result, the Company&amp;#146;s address was&#13;moved from Israel to Georgia.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company&amp;#146;s common stock was&#13;first listed on the Over-the-Counter Bulletin Board, or &amp;#147;OTC Bulletin Board&amp;#148; in April of 2003. It now trades on the&#13;OTCQB under the ticker symbol &amp;#147;TACI&amp;#148;.&lt;/p&gt;</us-gaap:OrganizationConsolidationAndPresentationOfFinancialStatementsDisclosureTextBlock>
+    <us-gaap:SignificantAccountingPoliciesTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 2 &amp;#150; SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Basis of Presentation&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;The financial statements have been prepared in accordance&#13;with generally accepted accounting principles in the United States (&amp;#147;US GAAP&amp;#148;).&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Use of Estimates&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The preparation of financial statements&#13;in conformity with accounting principles generally accepted in the United States of America requires management to make estimates&#13;and assumptions that affect the amounts reported in the financial statements and accompanying notes. The reported amounts of revenues&#13;and expenses during the reporting period may be affected by the estimates and assumptions management is required to make. Estimates&#13;and assumptions are reviewed periodically and the effects of revisions are reflected in the period that they are determined to&#13;be necessary. It is at least reasonably possible that management&amp;#146;s estimates could change in the near term with respect to&#13;these matters, as actual results could differ from these estimates.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Going Concern&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;In conformity with generally accepted&#13;accounting principles, it has been assumed that the Company will continue as a going concern.&amp;#160;The Company, however, continues&#13;to incur losses from operations ($312,535 in the year ended December 31, 2014) and has a negative working capital ($144,968 as&#13;of December 31, 2014). This raises substantial doubt about the Company's ability to continue as a going concern. Management intends&#13;to raise financing through public equity or other means and interests that it deems necessary.&amp;#160; These financial statements&#13;do not include any adjustments that might be necessary should the Company be unable to continue as a going concern.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Financial Statements in U.S. Dollars&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company has determined the U.S.&#13;dollar as the currency of its primary economic environment and thus, its functional and reporting currency. Non-U.S. dollar transactions&#13;and balances have been re-measured into U.S. dollars. All transaction gains and losses from the re-measurement of monetary balance&#13;sheet items denominated in non-dollar currencies are reflected in the statements of operations as other income or expenses, as&#13;appropriate.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Convertible debt with beneficial&#13;conversion feature&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company accounts for convertible&#13;debt with beneficial conversion feature in accordance with ASC 470-20 which requires the Company to recognize separately, at issuance,&#13;the embedded beneficial conversion feature in additional paid-in capital. The recognition is done by allocating a portion of the&#13;proceeds equal to the intrinsic value of that feature in additional paid-in capital. The intrinsic value is calculated as the difference&#13;between the effective conversion price of the convertible debt and the fair value of the shares at issuance date.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Income taxes&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company accounts for income taxes&#13;by the liability method whereby deferred tax assets and liability account balances are determined based on differences between&#13;financial reporting and tax bases of assets and liabilities and are measured using the enacted tax rates and laws that will be&#13;in effect when the differences are expected to reverse. The Company provides a valuation allowance, if necessary to reduce the&#13;amount of deferred tax assets to their estimated realizable value.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Related Parties&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;A party is considered to be related&#13;to the Company if the party directly or indirectly or through one or more intermediaries, controls, is controlled by, or is under&#13;common control with the Company. Related parties also include principal owners of the Company, its management, members of the immediate&#13;families of principal owners of the Company and its management and other parties with which the Company may deal if one party controls&#13;or can significantly influence the management or operating policies of the other to an extent that one of the transacting parties&#13;might be prevented from fully pursuing its own separate interests. A party which can significantly influence the management or&#13;operating policies of the transacting parties or if it has an ownership interest in one of the transacting parties and can significantly&#13;influence the other to an extent that one or more of the transacting parties might be prevented from fully pursuing its own separate&#13;interests is also a related party.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Basic and Diluted Net Income (Loss)&#13;per Share&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Basic net income (loss) per share is&#13;computed based on the weighted average number of common shares outstanding during each year. Diluted income (loss) per share is&#13;computed based on the weighted average number of common shares outstanding during each year, plus dilutive potential common shares&#13;considered outstanding during the year.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Reclassifications&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Certain prior period amounts were reclassified&#13;to conform to the manner of presentation in the current period. These reclassifications had no effect on the net loss or stockholders&amp;#146;&#13;equity.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Recent Accounting Pronouncements&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Calibri, Helvetica, Sans-Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Calibri, Helvetica, Sans-Serif; margin: 0; text-align: justify"&gt;&lt;font style="font-family: Times New Roman, Times, Serif"&gt;In&#13;June 2014, the FASB issued guidance which eliminates the concept of a development stage entity.&lt;/font&gt; &lt;font style="font-family: Times New Roman, Times, Serif"&gt;Accordingly,&#13;the incremental reporting requirements for a development stage entity, including inception-to-date information, will no longer&#13;apply. The Company has adopted early implementation of the amendments, as permitted. The amendments will be effective for the Company&#13;for reporting periods beginning after March 31, 2014. The Company will apply the guidance using a retrospective approach, except&#13;for certain disclosure requirements which will be applied prospectively. The Company does not expect these amendments to have a&#13;material effect on its financial position, results of operations, or cash flows.&lt;/font&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Courier New, Courier, Monospace; margin: 0"&gt;&amp;#160;&lt;/p&gt;</us-gaap:SignificantAccountingPoliciesTextBlock>
+    <us-gaap:BasisOfPresentationAndSignificantAccountingPoliciesTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Basis of Presentation&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;The financial statements have been prepared in accordance&#13;with generally accepted accounting principles in the United States (&amp;#147;US GAAP&amp;#148;).&lt;/p&gt;</us-gaap:BasisOfPresentationAndSignificantAccountingPoliciesTextBlock>
+    <us-gaap:UseOfEstimates contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Use of Estimates&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The preparation of financial statements&#13;in conformity with accounting principles generally accepted in the United States of America requires management to make estimates&#13;and assumptions that affect the amounts reported in the financial statements and accompanying notes. The reported amounts of revenues&#13;and expenses during the reporting period may be affected by the estimates and assumptions management is required to make. Estimates&#13;and assumptions are reviewed periodically and the effects of revisions are reflected in the period that they are determined to&#13;be necessary. It is at least reasonably possible that management&amp;#146;s estimates could change in the near term with respect to&#13;these matters, as actual results could differ from these estimates.&lt;/p&gt;</us-gaap:UseOfEstimates>
+    <us-gaap:SubstantialDoubtAboutGoingConcernTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Going Concern&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;In conformity with generally accepted&#13;accounting principles, it has been assumed that the Company will continue as a going concern.&amp;#160;The Company, however, continues&#13;to incur losses from operations ($312,535 in the year ended December 31, 2014) and has a negative working capital ($144,968 as&#13;of December 31, 2014). This raises substantial doubt about the Company's ability to continue as a going concern. Management intends&#13;to raise financing through public equity or other means and interests that it deems necessary.&amp;#160; These financial statements&#13;do not include any adjustments that might be necessary should the Company be unable to continue as a going concern.&lt;/p&gt;</us-gaap:SubstantialDoubtAboutGoingConcernTextBlock>
+    <us-gaap:BasisOfAccountingPolicyPolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Financial Statements in U.S. Dollars&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company has determined the U.S.&#13;dollar as the currency of its primary economic environment and thus, its functional and reporting currency. Non-U.S. dollar transactions&#13;and balances have been re-measured into U.S. dollars. All transaction gains and losses from the re-measurement of monetary balance&#13;sheet items denominated in non-dollar currencies are reflected in the statements of operations as other income or expenses, as&#13;appropriate.&lt;/p&gt;</us-gaap:BasisOfAccountingPolicyPolicyTextBlock>
+    <us-gaap:DebtPolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Convertible debt with beneficial&#13;conversion feature&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company accounts for convertible&#13;debt with beneficial conversion feature in accordance with ASC 470-20 which requires the Company to recognize separately, at issuance,&#13;the embedded beneficial conversion feature in additional paid-in capital. The recognition is done by allocating a portion of the&#13;proceeds equal to the intrinsic value of that feature in additional paid-in capital. The intrinsic value is calculated as the difference&#13;between the effective conversion price of the convertible debt and the fair value of the shares at issuance date.&lt;/p&gt;</us-gaap:DebtPolicyTextBlock>
+    <us-gaap:IncomeTaxPolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Income taxes&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The Company accounts for income taxes&#13;by the liability method whereby deferred tax assets and liability account balances are determined based on differences between&#13;financial reporting and tax bases of assets and liabilities and are measured using the enacted tax rates and laws that will be&#13;in effect when the differences are expected to reverse. The Company provides a valuation allowance, if necessary to reduce the&#13;amount of deferred tax assets to their estimated realizable value.&lt;/p&gt;</us-gaap:IncomeTaxPolicyTextBlock>
+    <TACI:RelatedPartiesPolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Related Parties&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;A party is considered to be related&#13;to the Company if the party directly or indirectly or through one or more intermediaries, controls, is controlled by, or is under&#13;common control with the Company. Related parties also include principal owners of the Company, its management, members of the immediate&#13;families of principal owners of the Company and its management and other parties with which the Company may deal if one party controls&#13;or can significantly influence the management or operating policies of the other to an extent that one of the transacting parties&#13;might be prevented from fully pursuing its own separate interests. A party which can significantly influence the management or&#13;operating policies of the transacting parties or if it has an ownership interest in one of the transacting parties and can significantly&#13;influence the other to an extent that one or more of the transacting parties might be prevented from fully pursuing its own separate&#13;interests is also a related party.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;</TACI:RelatedPartiesPolicyTextBlock>
+    <us-gaap:EarningsPerSharePolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Basic and Diluted Net Income (Loss)&#13;per Share&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Basic net income (loss) per share is&#13;computed based on the weighted average number of common shares outstanding during each year. Diluted income (loss) per share is&#13;computed based on the weighted average number of common shares outstanding during each year, plus dilutive potential common shares&#13;considered outstanding during the year.&lt;/p&gt;</us-gaap:EarningsPerSharePolicyTextBlock>
+    <us-gaap:NewAccountingPronouncementsPolicyPolicyTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;Recent Accounting Pronouncements&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Calibri, Helvetica, Sans-Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Calibri, Helvetica, Sans-Serif; margin: 0; text-align: justify"&gt;&lt;font style="font-family: Times New Roman, Times, Serif"&gt;In&#13;June 2014, the FASB issued guidance which eliminates the concept of a development stage entity.&lt;/font&gt; &lt;font style="font-family: Times New Roman, Times, Serif"&gt;Accordingly,&#13;the incremental reporting requirements for a development stage entity, including inception-to-date information, will no longer&#13;apply. The Company has adopted early implementation of the amendments, as permitted. The amendments will be effective for the Company&#13;for reporting periods beginning after March 31, 2014. The Company will apply the guidance using a retrospective approach, except&#13;for certain disclosure requirements which will be applied prospectively. The Company does not expect these amendments to have a&#13;material effect on its financial position, results of operations, or cash flows.&lt;/font&gt;&lt;/p&gt;</us-gaap:NewAccountingPronouncementsPolicyPolicyTextBlock>
+    <us-gaap:Reclassifications contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Reclassifications&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Certain prior period amounts were reclassified&#13;to conform to the manner of presentation in the current period. These reclassifications had no effect on the net loss or stockholders&amp;#146;&#13;equity.&lt;/p&gt;</us-gaap:Reclassifications>
+    <us-gaap:RelatedPartyTransactionsDisclosureTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 3 &amp;#150; RELATED PARTY TRANSACTIONS&amp;#9;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;During the year ended December 31, 2014,&#13;the following three liabilities were assigned to a related party, and then forgiven by the related party, Top Alpha consulting&#13;agreement, Porat employment agreement, and Top Alpha convertible promissory note. There were no changes in terms.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;For the year ended December 31, 2013,&#13;the Company had incurred and accrued an expense of $141,015 related to consulting services provided by Top Alpha, majority shareholder&#13;(presented as Accounts payable &amp;#150;related parties on the accompanying balance sheets). During 2014, additional expenses were&#13;incurred and accrued in the amount of $6,449, leaving an accrued balance prior to the assignment and forgiveness on May 22, 2014&#13;of $147,464, which was written off and charged to Additional Paid-in Capital as a liability forgiven by a related party.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On February 1, 2012, the Company entered&#13;into employment agreement with Mr. Porat. Pursuant to this employment agreement, Mr. Porat shall serve as President, CEO, and CFO&#13;of the Company at an annual salary of $70,000. During the year ended December 31, 2013, the Company incurred an expense of $70,000&#13;for Mr. Porat&amp;#146;s salary. As of December 31, 2013, a total of $134,167 Mr.Porat&amp;#146;s salary had been accrued (presented&#13;as Accounts payable &amp;#150; related parties on the accompanying balance sheets).&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On February 1, 2014, the Company entered&#13;into a new employment agreement with Mr. Porat. Pursuant to this new employment agreement, Mr. Porat shall continue to serve as&#13;President, CEO, and CFO of the Company at an annual salary of $90,000. The new employment agreement was effective as of February&#13;1, 2014, and was to be in effect for a term of two years. However, Mr. Porat submitted a letter of resignation on May 27, 2014.&#13;During the year ended December 31, 2014, the Company incurred an expense of $33,901 for Mr. Porat&amp;#146;s salary. As of May 22,&#13;2014 the Company had accrued and owed salary to Mr. Porat in the amount of $168,068, prior to the assignment and forgiveness, which&#13;was written off and charged to Additional Paid-in Capital as a liability forgiven by a related party.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On May 23, 2014, related party liabilities&#13;totaling $393,838 were written off and charged to Additional Paid-in Capital as liabilities forgiven by a related party. These&#13;liabilities consisted of salary owed to Mr. Porat in the amount of $168,068, debt due to Top Alpha Capital related to a consulting&#13;agreement for $147,464, and a portion of the Top Alpha Capital convertible promissory note in the amount of $78,306. Refer to Note&#13;4 &amp;#150; Convertible Promissory Note for details related to the conversion, assignment, and the debt forgiven under the promissory&#13;note.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;In May of 2014, the Company received&#13;advances from a stockholder as a loan with no interest and due on demand in the amount of $600 for filings with the State of Nevada.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On June 1, 2014, the Company executed&#13;a funding agreement with NFA Securities L3C, a stockholder, to fund ongoing company operations with a loan of up to $150,000. During&#13;the year ended December 31, 2014, NFA Securities L3C loaned the Company $68,555 under the funding agreement. The advances had no&#13;interest and were due on demand.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;In November of 2014, the Company engaged&#13;NFA Seneca, LLC for consulting services. NFA Seneca, LLC and NFA Securities L3C, a stockholder, have common principal owners. During&#13;the year ended December 31, 2014 the Company incurred an expense of $28,000 for consulting services including traveling expenses.&lt;/p&gt;</us-gaap:RelatedPartyTransactionsDisclosureTextBlock>
+    <us-gaap:DebtDisclosureTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 4 &amp;#150; CONVERTIBLE PROMISSORY NOTE&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On December 31, 2013 the Company signed an&#13;amended convertible promissory note with Top Alpha Capital Ltd in the amount of $103,339 plus accrued interest of $5,835, totaling&#13;$109,174. This note shall accrue interest at the rate of 6% per annum, the interest shall be payable semi-annually on June 30 and&#13;December 31. The original note was dated June 30, 2012 for $62,255. The due date for the note has been extended to December 31,&#13;2014, and in consideration for this extension, the conversion rate has been amended from one share of Common Stock for each $2.480745&#13;principal amount of the note and accrued interest, to one share of Common Stock for each $0.15 principal amount of the note and&#13;accrued interest. The convertible promissory note had a balance of $0 as of December 31, 2013, net of $109,174 debt discount.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;During the year ended December 31, 2013 in&#13;respect of the promissory note, a debt discount originating from the beneficial conversion feature in the amount of $910,084 was&#13;charged to Additional Paid-in Capital. $786,053 of the above discount was amortized to expense.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On May 22, 2014, the Company had convertible&#13;debt outstanding in the amount of $109,174, which was assigned by Top Alpha to a related party. Out of the $109,174, $9,868 was&#13;converted by the related party into 65,787 shares of common stock. $21,000 was assigned by the related party to other parties,&#13;and the balance of $78,306 was forgiven and charged to Additional Paid-in Capital as a liability forgiven by a related party. Refer&#13;to Note 3 &amp;#150; Related Party Transactions for details related to related party liabilities forgiven.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Upon assignment of the $21,000 in convertible&#13;debt, three new convertible promissory notes were created, the conversion price changed from $0.15 per common stock share to $$0.001&#13;per share, the interest rate was modified from 6% to 5% per annum, and the due date was modified from December 31, 2014 to November&#13;22, 2014. As a result, the Company evaluated the application of ASC 470-50 and ASC 470-60 and modifications constituted a debt&#13;extinguishment rather than a troubled debt restructuring, with the old debt written off and the new debt initially recorded at&#13;fair value with a new effective interest rate. The Company accounted for the intrinsic value of a beneficial conversion feature&#13;inherent to the new convertible promissory notes and a total debt discount of $21,000 was recorded.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;These promissory notes totaling $21,000 are&#13;to be converted into 21,000,000 of newly issued restricted shares of common stock. These shares shall be issued as follows, 13,333,333&#13;shares of common stock to NFA Securities L3C and 6,666,667 shares of common stock to IMIR Management LLC, and 1,000,000 shares of&#13;common stock to Friction &amp;#38; Heat, LLC, a third party. As of December 31, 2014 $20,000 of the debt was converted into 20,000,000&#13;shares. The Friction &amp;#38; Heat convertible promissory note in the amount of $1,000 remained outstanding as of December 31, 2014.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;During the year ended December 31, 2014 in&#13;respect of the promissory note, a debt discount originating from the beneficial conversion feature in the amount of $21,000 was&#13;charged to Additional Paid-in Capital and $130,174 debt discount was amortized to expense.&lt;/p&gt;</us-gaap:DebtDisclosureTextBlock>
+    <us-gaap:StockholdersEquityNoteDisclosureTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 5 &amp;#150; SHAREHOLDERS&amp;#146; DEFICIT&amp;#9;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 11pt Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Financial statements as of December 31, 2013&#13;reported additional paid-in-capital of $4,291,101 and a capital reserve of $895,227. The capital reserve has been regrouped into&#13;the additional paid-in-capital account for a net balance of $5,186,328.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On December 31, 2013 the Company signed an&#13;amended convertible promissory note resulting in a debt discount originating from beneficial conversion feature in the amount of&#13;$910,084, which was charged to Additional Paid-in Capital. See Note 4 &amp;#150; Convertible Promissory Note for additional details.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;In May of 2014 shares of common stock of 20,065,787&#13;were issued for the settlement of $29,868 convertible debts. The assignment of $21,000 in convertible debt resulted in an extinguishment&#13;of debt. $21,000 debt discount originated from beneficial conversion feature inherent to the new convertible promissory notes was&#13;charged to additional paid-in capital; see Note 4 &amp;#150; Convertible Promissory Note. Related party liabilities were forgiven&#13;in the amount of $393,838 increasing additional paid-in capital, as referenced in Note 3 &amp;#150; Related Party Transactions.&lt;/p&gt;&#13;&#13;&lt;p style="font: 11pt Calibri, Helvetica, Sans-Serif; margin: 0; text-align: justify; text-indent: 0.5in"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Calibri, Helvetica, Sans-Serif; margin: 0; text-align: justify"&gt;&lt;font style="font-family: Times New Roman, Times, Serif"&gt;On&#13;May 24, 2014, the Company executed a 150 to 1 reverse split of all common shares. Following the reverse split, the par value per&#13;common share decreased from $0.01 to $0.001. Each 150 shares of Common Stock (&amp;#147;Old Stock&amp;#148;) issued and outstanding were&#13;automatically, without any action by the holder, changed and reclassified into 1 share of fully-paid and non-assessable Common&#13;Stock (&amp;#147;New Stock&amp;#148;). All fractional shares were rounded up to the next whole share. All shares under 100 shares were&#13;rounded to 100 shares. The earnings per share calculations and outstanding share information for all periods presented have been&#13;recast to reflect the impact of the stock split.&lt;/font&gt;&lt;font style="font-family: Arial, Helvetica, Sans-Serif; color: #222222; background-color: white"&gt;&#13;&lt;/font&gt;&lt;font style="font-family: Times New Roman, Times, Serif"&gt;In addition, the Company increased the authorized shares from 700,000,000&#13;to 750,000,000 shares of stock consisting of 700,000,000 shares of common stock with a par value of $0.001 and 50,000,000 shares&#13;of preferred stock with a par value of $0.001. &lt;/font&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;</us-gaap:StockholdersEquityNoteDisclosureTextBlock>
+    <us-gaap:IncomeTaxDisclosureTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 6 &amp;#150; INCOME TAXES&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 11pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Tax rates&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;Transatlantic is subject to a 15%-35% corporate&#13;tax rate in the United States. Income taxable in Israeli is subject to a tax rate of 25% in 2013 and 26.5% for 2014.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;For financial reporting purposes, income (loss)&#13;before income taxes includes the following components:&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;/p&gt;&#13;&#13;&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-left: 5.4pt"&gt;United States&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;)&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;(1,018,407&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Israel&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(4,097&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;(1,022,504&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;&#13;&#13;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify; text-indent: 0.5in"&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;font style="text-underline-style: double"&gt;&amp;#160;&lt;/font&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;For the years ended December 31, 2014 and 2013,&#13;the Company did not recognize expenses for the benefit conversion feature of $130,174 and $786,053 respectively, for tax purposes.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Deferred Tax&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;/p&gt;&#13;&#13;&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;Deferred tax assets:&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-left: 5.4pt"&gt;Net Operating loss carry forwards&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;1,132,014&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;1,070,011&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Valuation allowance&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(1,132,014&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(1,070,011&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;Net deferred tax assets&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;&#13;&#13;&#13;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The deferred tax assets have been fully offset&#13;by a valuation allowance. The net change in the total valuation allowance for the years ended December 31, 2014 and 2013 was an&#13;increase of $62,003 and a decrease of $476,438 respectively. In assessing the realization of deferred tax assets, management considers&#13;whether it is more likely than not that some or all of the deferred tax assets will not be realized. The ultimate realization of&#13;deferred tax assets depends on the generation of future taxable income during the periods in which those temporary differences&#13;are reducible. Management considers projected taxable income and tax planning strategies in making this assessment. In order to&#13;fully realize the deferred tax asset, the Company will need to generate future taxable income prior to the expiration of the deferred&#13;tax assets governed by the tax code. Based on the level of historical taxable losses, management believes that it is more likely&#13;than not that the Company will not realize the benefits of these deductible differences.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;As of December 31, 2014, the Company has net&#13;operating loss carry forwards for federal income tax purposes of approximately $3.3 million, after consideration of approximately&#13;$201,400 of net operating loss carry forwards that are expected to expire unused due to an ownership change as defined under the&#13;Internal Revenue Code section 382 that occurred in early 2006. These federal net operating loss carry forwards will expire if not&#13;utilized on various dates through 2027.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Reconciliation of Income Tax Benefit (Expense)&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;A reconciliation of the theoretical income&#13;tax computed on the loss before income taxes at the statutory tax rate and the actual income tax provision is presented as follows:&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;/p&gt;&#13;&#13;&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Loss before income taxes as per the income statement&lt;/td&gt;&lt;td style="width: 8%; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; border-bottom: Black 1pt solid; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; border-bottom: Black 1pt solid; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="width: 1%; padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="width: 8%; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; border-bottom: Black 1pt solid; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; border-bottom: Black 1pt solid; text-align: right"&gt;(1,022,504&lt;/td&gt;&lt;td style="width: 1%; padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Tax calculated according to the statutory tax rate of 34%&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;(106,262&lt;/td&gt;&lt;td style="text-align: left"&gt;)&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;(347,651&lt;/td&gt;&lt;td style="text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Increase (decrease) in income tax resulting from:&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Non tax benefit losses&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;106,262&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;347,282&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Foreign tax rate differential&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;Total income tax benefit&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;&#13;&#13;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify; text-indent: 0.5in"&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;The income tax payable as of December 31, 2014&#13;and 2013 was $0.&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;Accounting for Uncertainty in Income Taxes&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;&lt;b&gt;&amp;#160;&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;As of January 1, 2014 and for the 12 months&#13;ended December 31, 2014, the Company did not have any unrecognized tax benefits and do not expect that the amount of unrecognized&#13;tax benefits will change significantly within the next 12 months. The Company&amp;#146;s accounting policy is to accrue interest and&#13;penalties related to unrecognized tax benefits as a component of income tax expense.&lt;/p&gt;</us-gaap:IncomeTaxDisclosureTextBlock>
+    <us-gaap:ComprehensiveIncomeNoteTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="margin: 0pt"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-left: 5.4pt"&gt;United States&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;)&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;(1,018,407&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Israel&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(4,097&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;(1,022,504&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;&#13;&lt;p style="margin: 0pt"&gt;&lt;/p&gt;</us-gaap:ComprehensiveIncomeNoteTextBlock>
+    <us-gaap:ScheduleOfDeferredTaxAssetsAndLiabilitiesTableTextBlock contextRef="From2014-01-01to2014-12-31">&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;Deferred tax assets:&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-left: 5.4pt"&gt;Net Operating loss carry forwards&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;1,132,014&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="width: 8%"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; text-align: right"&gt;1,070,011&lt;/td&gt;&lt;td style="width: 1%; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Valuation allowance&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(1,132,014&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;(1,070,011&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;Net deferred tax assets&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;</us-gaap:ScheduleOfDeferredTaxAssetsAndLiabilitiesTableTextBlock>
+    <us-gaap:ScheduleOfComponentsOfIncomeTaxExpenseBenefitTableTextBlock contextRef="From2014-01-01to2014-12-31">&lt;table cellpadding="0" cellspacing="0" style="width: 100%; font: 10pt Times New Roman, Times, Serif"&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="7" style="font-weight: bold; text-align: center"&gt;Year ended December 31,&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="font-weight: bold; text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2014&lt;/td&gt;&lt;td style="font-weight: bold; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="font-weight: bold; text-align: center; border-bottom: Black 1pt solid"&gt;2013&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom"&gt;&#13;    &lt;td style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td colspan="3" style="text-align: justify"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="width: 56%; text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Loss before income taxes as per the income statement&lt;/td&gt;&lt;td style="width: 8%; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; border-bottom: Black 1pt solid; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; border-bottom: Black 1pt solid; text-align: right"&gt;(312,535&lt;/td&gt;&lt;td style="width: 1%; padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;td style="width: 8%; padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="width: 1%; border-bottom: Black 1pt solid; text-align: left"&gt;$&lt;/td&gt;&lt;td style="width: 12%; border-bottom: Black 1pt solid; text-align: right"&gt;(1,022,504&lt;/td&gt;&lt;td style="width: 1%; padding-bottom: 1pt; text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Tax calculated according to the statutory tax rate of 34%&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;(106,262&lt;/td&gt;&lt;td style="text-align: left"&gt;)&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;(347,651&lt;/td&gt;&lt;td style="text-align: left"&gt;)&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Increase (decrease) in income tax resulting from:&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-left: 5.4pt"&gt;Non tax benefit losses&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;106,262&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="text-align: right"&gt;347,282&lt;/td&gt;&lt;td style="text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: White"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 1pt; padding-left: 5.4pt"&gt;Foreign tax rate differential&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 1pt solid; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="border-bottom: Black 1pt solid; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 1pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;tr style="vertical-align: bottom; background-color: rgb(204,238,255)"&gt;&#13;    &lt;td style="text-align: justify; padding-bottom: 2.5pt; padding-left: 5.4pt"&gt;Total income tax benefit&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt"&gt;&amp;#160;&lt;/td&gt;&#13;    &lt;td style="border-bottom: Black 2.5pt double; text-align: left"&gt;$&lt;/td&gt;&lt;td style="border-bottom: Black 2.5pt double; text-align: right"&gt;&amp;#151;&amp;#160;&amp;#160;&lt;/td&gt;&lt;td style="padding-bottom: 2.5pt; text-align: left"&gt;&amp;#160;&lt;/td&gt;&lt;/tr&gt;&#13;&lt;/table&gt;</us-gaap:ScheduleOfComponentsOfIncomeTaxExpenseBenefitTableTextBlock>
+    <us-gaap:SubsequentEventsTextBlock contextRef="From2014-01-01to2014-12-31">&lt;p style="font: 10pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&lt;b&gt;NOTE 7 &amp;#150; SUBSEQUENT EVENTS&lt;/b&gt;&lt;/p&gt;&#13;&#13;&lt;p style="font: 11pt/normal Times New Roman, Times, Serif; margin: 0"&gt;&amp;#160;&lt;/p&gt;&#13;&#13;&lt;p style="font: 10pt Times New Roman, Times, Serif; margin: 0; text-align: justify"&gt;On March 6, 2015, the remaining $1,000 convertible&#13;promissory note was converted to 1,000,000 shares of common stock.&lt;/p&gt;</us-gaap:SubsequentEventsTextBlock>
+    <TACI:OfficersCompensationAgreement contextRef="From2014-01-01to2014-12-31_custom_PoratEmploymentAgreementMember" unitRef="USD" decimals="0">90000</TACI:OfficersCompensationAgreement>
+    <TACI:OfficersCompensationAgreement contextRef="From2013-01-01to2013-12-31_custom_PoratEmploymentAgreementMember" unitRef="USD" decimals="0">70000</TACI:OfficersCompensationAgreement>
+    <TACI:TermOfEmployment contextRef="From2014-01-01to2014-12-31_custom_PoratEmploymentAgreementMember">P2Y</TACI:TermOfEmployment>
+    <us-gaap:DueToOfficersOrStockholdersCurrent contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">600</us-gaap:DueToOfficersOrStockholdersCurrent>
+    <us-gaap:DueToOfficersOrStockholdersCurrent contextRef="AsOf2014-12-31_custom_NFASecuritiesL3CMember" unitRef="USD" decimals="0">68555</us-gaap:DueToOfficersOrStockholdersCurrent>
+    <us-gaap:RelatedPartyTransactionAmountsOfTransaction contextRef="From2014-01-01to2014-12-31_custom_NFASecuritiesL3CMember" unitRef="USD" decimals="0">150000</us-gaap:RelatedPartyTransactionAmountsOfTransaction>
+    <us-gaap:ConvertibleNotesPayable contextRef="AsOf2014-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">0</us-gaap:ConvertibleNotesPayable>
+    <us-gaap:ConvertibleNotesPayable contextRef="AsOf2013-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">109174</us-gaap:ConvertibleNotesPayable>
+    <us-gaap:DebtInstrumentIncreaseAccruedInterest contextRef="From2013-01-01to2013-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">5835</us-gaap:DebtInstrumentIncreaseAccruedInterest>
+    <us-gaap:DebtInstrumentUnamortizedDiscount contextRef="AsOf2014-12-31_custom_TopAlphaCapitalLtdNote1Member" unitRef="USD" decimals="0">109174</us-gaap:DebtInstrumentUnamortizedDiscount>
+    <TACI:CapitalReserve contextRef="AsOf2013-12-31_us-gaap_ScenarioPreviouslyReportedMember" unitRef="USD" decimals="0">895227</TACI:CapitalReserve>
+    <us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate contextRef="From2014-01-01to2014-12-31_us-gaap_InternalRevenueServiceIRSMember" unitRef="Pure" decimals="INF">0.35</us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate>
+    <us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate contextRef="From2013-01-01to2013-12-31_us-gaap_InternalRevenueServiceIRSMember" unitRef="Pure" decimals="INF">0.15</us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate>
+    <us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate contextRef="From2014-01-01to2014-12-31_us-gaap_NonUsMember" unitRef="Pure" decimals="INF">0.265</us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate>
+    <us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate contextRef="From2013-01-01to2013-12-31_us-gaap_NonUsMember" unitRef="Pure" decimals="INF">0.25</us-gaap:EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate>
+    <us-gaap:DeferredTaxAssetsTaxCreditCarryforwards contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">1132014</us-gaap:DeferredTaxAssetsTaxCreditCarryforwards>
+    <us-gaap:DeferredTaxAssetsTaxCreditCarryforwards contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">1070011</us-gaap:DeferredTaxAssetsTaxCreditCarryforwards>
+    <us-gaap:OperatingLossCarryforwardsValuationAllowance contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">-1132014</us-gaap:OperatingLossCarryforwardsValuationAllowance>
+    <us-gaap:OperatingLossCarryforwardsValuationAllowance contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">-1070011</us-gaap:OperatingLossCarryforwardsValuationAllowance>
+    <us-gaap:DeferredTaxAssetsNet contextRef="AsOf2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:DeferredTaxAssetsNet contextRef="AsOf2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CurrentFederalTaxExpenseBenefit contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">-106262</us-gaap:CurrentFederalTaxExpenseBenefit>
+    <us-gaap:CurrentFederalTaxExpenseBenefit contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">-347651</us-gaap:CurrentFederalTaxExpenseBenefit>
+    <us-gaap:CurrentForeignTaxExpenseBenefit contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:CurrentForeignTaxExpenseBenefit contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">369</us-gaap:CurrentForeignTaxExpenseBenefit>
+    <us-gaap:IncomeTaxReconciliationOtherReconcilingItems contextRef="From2014-01-01to2014-12-31" unitRef="USD" decimals="0">106262</us-gaap:IncomeTaxReconciliationOtherReconcilingItems>
+    <us-gaap:IncomeTaxReconciliationOtherReconcilingItems contextRef="From2013-01-01to2013-12-31" unitRef="USD" decimals="0">347282</us-gaap:IncomeTaxReconciliationOtherReconcilingItems>
+    <us-gaap:IncomeTaxExpenseBenefit contextRef="From2014-01-01to2014-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:IncomeTaxExpenseBenefit contextRef="From2013-01-01to2013-12-31" unitRef="USD" xsi:nil="true" />
+    <us-gaap:TaxCreditCarryforwardValuationAllowance contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">62003</us-gaap:TaxCreditCarryforwardValuationAllowance>
+    <us-gaap:TaxCreditCarryforwardValuationAllowance contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">-476438</us-gaap:TaxCreditCarryforwardValuationAllowance>
+    <us-gaap:OperatingLossCarryforwards contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">3300000</us-gaap:OperatingLossCarryforwards>
+    <TACI:UnusedNetOperatingLossCarryforwards contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">201400</TACI:UnusedNetOperatingLossCarryforwards>
+    <us-gaap:AccruedIncomeTaxes contextRef="AsOf2014-12-31" unitRef="USD" decimals="0">0</us-gaap:AccruedIncomeTaxes>
+    <us-gaap:AccruedIncomeTaxes contextRef="AsOf2013-12-31" unitRef="USD" decimals="0">0</us-gaap:AccruedIncomeTaxes>
+</xbrli:xbrl>
