@@ -1,251 +1,263 @@
-var fs = require('fs');
-var _ = require('lodash');
-var xmlParser = require('xml2json');
-var FundamentalAccountingConcepts = require('./FundamentalAccountingConcepts.js');
+(function() {
+  'use strict';
 
-function parse(pathToXbrlDoc) {
-  var self = this;
-  self.loadYear = loadYear;
-  self.loadField = loadField;
-  self.getFactValue = getFactValue;
-  self.documentJson;
-  self.fields = {};
-  self.getNodeList = getNodeList;
-  self.getCurrentPeriodAndContextInformation = getCurrentPeriodAndContextInformation;
-  self.lookForAlternativeInstanceContext = lookForAlternativeInstanceContext;
+  var Promise = require('bluebird');
+  var fs = Promise.promisifyAll(require('fs'));
+  var _ = require('lodash');
+  var xmlParser = require('xml2json');
+  var FundamentalAccountingConcepts = require('./FundamentalAccountingConcepts.js');
 
-  // Load xml and parse to json
-  fs.readFile(pathToXbrlDoc, function(err, data) {
-    fs.writeFile('parsedXml.json', xmlParser.toJson(data), function(err) {
-      console.log(err)
-    })
-    var jsonObj =JSON.parse(xmlParser.toJson(data));
-    self.documentJson = jsonObj[Object.keys(jsonObj)[0]];
+  function parse(pathToXbrlDoc) {
+    var self = this;
+    self.loadYear = loadYear;
+    self.loadField = loadField;
+    self.getFactValue = getFactValue;
+    self.documentJson;
+    self.fields = {};
+    self.getNodeList = getNodeList;
+    self.getContextForInstants = getContextForInstants;
+    self.getContextForDurations = getContextForDurations;
+    self.lookForAlternativeInstanceContext = lookForAlternativeInstanceContext;
 
-    // Calculate and load basic facts from json doc
-    init();
-  })
+    return new Promise(function(resolve, reject) {
 
-  function init() {
-    self.loadField('EntityRegistrantName');
-    self.loadField('CurrentFiscalYearEndDate');
-    self.loadField('EntityCentralIndexKey');
-    self.loadField('EntityFilerCategory');
-    self.loadField('TradingSymbol');
-    self.loadField('DocumentPeriodEndDate');
-    self.loadField('DocumentFiscalYearFocus');
-    self.loadField('DocumentFiscalPeriodFocus');
-    self.loadField('DocumentFiscalYearFocus', 'DocumentFiscalYearFocusContext', 'contextRef');
-    self.loadField('DocumentFiscalPeriodFocus', 'DocumentFiscalPeriodFocusContext', 'contextRef');
-    self.loadField('DocumentType');
-    var currentYearEnd = self.loadYear();
-    if (currentYearEnd) {
-      self.getCurrentPeriodAndContextInformation(currentYearEnd);
-      FundamentalAccountingConcepts.load(self);
-      getFactValue("us-gaap:CommitmentsAndContingencies", "Instant");
-    }
-  }
+      // Load xml and parse to json
+      fs.readFileAsync(pathToXbrlDoc).then(function(data) {
+        // fs.writeFile('parsedXml.json', xmlParser.toJson(data), function(err) {
+        //   console.log(err)
+        // })
+        var jsonObj =JSON.parse(xmlParser.toJson(data));
+        self.documentJson = jsonObj[Object.keys(jsonObj)[0]];
 
-  // Utility functions
-  function loadField(conceptToFind, fieldName, key) {
-    key = key || '$t';
-    fieldName = fieldName || conceptToFind;
-    self.fields[fieldName] = _.get(self.documentJson, ['dei:' + conceptToFind, key], 'Field not found.');
-  }
+        // Calculate and load basic facts from json doc
+        self.loadField('EntityRegistrantName');
+        self.loadField('CurrentFiscalYearEndDate');
+        self.loadField('EntityCentralIndexKey');
+        self.loadField('EntityFilerCategory');
+        self.loadField('TradingSymbol');
+        self.loadField('DocumentPeriodEndDate');
+        self.loadField('DocumentFiscalYearFocus');
+        self.loadField('DocumentFiscalPeriodFocus');
+        self.loadField('DocumentFiscalYearFocus', 'DocumentFiscalYearFocusContext', 'contextRef');
+        self.loadField('DocumentFiscalPeriodFocus', 'DocumentFiscalPeriodFocusContext', 'contextRef');
+        self.loadField('DocumentType');
 
-  function getFactValue(concept, periodType) {
-    var contextReference;
-    var factNode;
-    var factValue;
+        var currentYearEnd = self.loadYear();
+        if (currentYearEnd) {
+          var durations = self.getContextForDurations(currentYearEnd);
 
-    if (periodType === 'Instant') {
-      contextReference = self.fields['ContextForInstants'];
-    } else if (periodType === 'Duration') {
-      contextReference = self.fields['ContextForDurations'];
-    } else {
-      console.warn('CONTEXT ERROR');
-    }
+          self.fields['BalanceSheetDate'] = durations.balanceSheetDate;
+          self.fields['IncomeStatementPeriodYTD'] = durations.incomeStatementPeriodYTD;
+          self.fields['ContextForInstants'] = self.getContextForInstants(currentYearEnd);
+          self.fields['ContextForDurations'] = durations.contextForDurations;
+          self.fields['BalanceSheetDate'] = currentYearEnd;
 
-    _.forEach(_.get(self.documentJson, concept), function(node) {
-      if (node.contextRef === contextReference) {
-        factNode = node;
-      }
-    })
-
-    if (factNode) {
-      factValue = factNode['$t'];
-
-      for (key in factNode) {
-        if (key.indexOf('nil') >= 0) {
-          factValue = 0;
+          // Load the rest of the facts
+          FundamentalAccountingConcepts.load(self)
+          resolve(self.fields);
+        } else {
+          reject('No year end found.')
         }
-      }
-      if (typeof factValue === 'string') {
-        factValue = Number(factValue);
-      }
-    } else {
-      return null;
+      }).catch(function(err) {
+          reject('Problem with reading file', err);
+      })
+    })
+
+    // Utility functions
+    function loadField(conceptToFind, fieldName, key) {
+      key = key || '$t';
+      fieldName = fieldName || conceptToFind;
+      self.fields[fieldName] = _.get(self.documentJson, ['dei:' + conceptToFind, key], 'Field not found.');
     }
 
-    return factValue;
-  };
+    function getFactValue(concept, periodType) {
+      var contextReference;
+      var factNode;
+      var factValue;
 
-  function loadYear() {
-    var currentEnd = _.get(self.documentJson, ['dei:DocumentPeriodEndDate', '$t']);
-    if ((currentEnd).match(/(\d{4})-(\d{1,2})-(\d{1,2})/)) {
-      return currentEnd;
-    } else {
-      console.warn(currentEnd + ' is not a date');
-      return false;
-    }
-  }
-
-  function getNodeList(nodeNamesArr, root) {
-    root = root || self.documentJson;
-    var allNodes = [];
-
-    for (var i = 0; i < nodeNamesArr.length; i++) {
-      allNodes = allNodes.concat(_.get(root, nodeNamesArr[i]));
-    }
-
-    // Remove undefined nodes
-    return _.filter(allNodes, function(node) {
-      if (node) {
-        return true;
+      if (periodType === 'Instant') {
+        contextReference = self.fields['ContextForInstants'];
+      } else if (periodType === 'Duration') {
+        contextReference = self.fields['ContextForDurations'];
+      } else {
+        console.warn('CONTEXT ERROR');
       }
-    });
-  }
 
-  // Figures out the current period and contexts for the current period instance/duration contexts
-  function getCurrentPeriodAndContextInformation(endDate) {
-    self.fields['BalanceSheetDate'] = 'ERROR';
-    self.fields['IncomeStatementPeriodYTD'] = 'ERROR';
-    self.fields['ContextForInstants'] = 'ERROR';
-    self.fields['ContextForDurations'] = 'ERROR';
-
-    var useContext = 'ERROR';
-    var startDate = 'ERROR'
-    var startDateYTD = '2099-01-01'
-    var useContext2 = 'ERROR'
-
-    var instanceNodesArr;
-    var contextId;
-    var contextPeriod;
-    var periodsWithCorrectInstanceContextAndEndDate;
-    var instanceHasExplicitMember;
-    var contextForInstants;
-
-    var durationNodesArr;
-    var contextId2;
-    var contextPeriod2;
-    var periodsWithCorrectDurationContextAndEndDate;
-    var durationHasExplicitMember;
-    var startDate;
-    var contextForDurations;
-
-    // Uses the concept ASSETS to find the correct instance context
-    instanceNodesArr = self.getNodeList(['us-gaap:Assets', 'us-gaap:AssetsCurrent', 'us-gaap:LiabilitiesAndStockholdersEquity']);
-
-    for (var i = 0; i < instanceNodesArr.length; i++) {
-
-      contextId = instanceNodesArr[i].contextRef;
-        // console.log('HERE', _.get(self.documentJson, 'context').id)
-      periodsWithCorrectInstanceContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context'), function(period) {
-        if (period.id === contextId) {
-          contextPeriod = _.get(period, ['xbrli:period', 'xbrli:instant']) || _.get(period, ['period', 'instant']);
-
-          if (contextPeriod && contextPeriod === endDate) {
-            instanceHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false)
-            if (instanceHasExplicitMember) {
-              return true;
-            } else {
-              useContext = contextId;
-              console.log('Use Context:', useContext);
-            }
-          }
+      _.forEach(_.get(self.documentJson, concept), function(node) {
+        if (node.contextRef === contextReference) {
+          factNode = node;
         }
       })
+
+      if (factNode) {
+        factValue = factNode['$t'];
+
+        for (var key in factNode) {
+          if (key.indexOf('nil') >= 0) {
+            factValue = 0;
+          }
+        }
+        if (typeof factValue === 'string') {
+          factValue = Number(factValue);
+        }
+      } else {
+        return null;
+      }
+
+      return factValue;
+    };
+
+    function loadYear() {
+      var currentEnd = _.get(self.documentJson, ['dei:DocumentPeriodEndDate', '$t']);
+      if ((currentEnd).match(/(\d{4})-(\d{1,2})-(\d{1,2})/)) {
+        return currentEnd;
+      } else {
+        console.warn(currentEnd + ' is not a date');
+        return false;
+      }
     }
 
-    contextForInstants = useContext
-    self.fields['ContextForInstants'] = contextForInstants;
+    function getNodeList(nodeNamesArr, root) {
+      root = root || self.documentJson;
+      var allNodes = [];
 
+      for (var i = 0; i < nodeNamesArr.length; i++) {
+        allNodes = allNodes.concat(_.get(root, nodeNamesArr[i]));
+      }
 
-    // This finds the duration context
-    durationNodesArr = self.getNodeList([
-      'us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease',
-      'us-gaap:CashPeriodIncreaseDecrease',
-      'us-gaap:NetIncomeLoss',
-      'dei:DocumentPeriodEndDate'
-      ]);
-
-    for (var k = 0; k < durationNodesArr.length; k++) {
-      contextId2 = durationNodesArr[k].contextRef;
-      periodsWithCorrectDurationContextAndEndDate = _.filter(_.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context'), function(period) {
-        if (period.id === contextId2) {
-          contextPeriod2 = _.get(period, ['xbrli:period', 'xbrli:endDate']) || _.get(period, ['period', 'endDate']);
-          if (contextPeriod2 === endDate) {
-            durationHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
-            if (durationHasExplicitMember) {
-              return true;
-            } else {
-              startDate = _.get(period, ['xbrli:period', 'xbrli:startDate']) || _.get(period, ['period', 'startDate']);
-              console.log('Context start date:', startDate);
-              console.log('YTD start date:', startDateYTD);
-
-              if (startDate <= startDateYTD) {
-                console.log('Context start date is less than current year to date, replace');
-                console.log('Context start date: ', startDate);
-                console.log('Current min: ', startDateYTD);
-
-                startDateYTD = startDate;
-                useContext = _.get(period, 'id');
-              } else {
-                console.log('Context start date is greater than YTD, keep current YTD');
-                console.log('Context start date: ', startDate);
-              }
-
-              console.log('Use context ID: ', useContext);
-              console.log('Current min: ', startDateYTD);
-              console.log('');
-              console.log('Use context: ', useContext);
-              lookForAlternativeInstanceContext()
-            }
-          }
+      // Remove undefined nodes
+      return _.filter(allNodes, function(node) {
+        if (node) {
+          return true;
         }
       });
     }
-    self.fields['BalanceSheetDate'] = endDate;
 
-    if (contextForInstants === 'ERROR') {
-      contextForInstants = self.lookForAlternativeInstanceContext();
-      self.fields['ContextForInstants'] = contextForInstants;
+    function getContextForInstants(endDate) {
+      var contextForInstants = 'ERROR';
+      var contextId;
+      var contextPeriods;
+      var contextPeriod;
+      var instanceHasExplicitMember;
+
+      // Uses the concept ASSETS to find the correct instance context
+      var instanceNodesArr = self.getNodeList([
+        'us-gaap:Assets',
+        'us-gaap:AssetsCurrent',
+        'us-gaap:LiabilitiesAndStockholdersEquity'
+      ]);
+
+      for (var i = 0; i < instanceNodesArr.length; i++) {
+
+        contextId = instanceNodesArr[i].contextRef;
+        contextPeriods = _.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context');
+
+        _.forEach(contextPeriods, function(period) {
+          if (period.id === contextId) {
+            contextPeriod = _.get(period, ['xbrli:period', 'xbrli:instant']) || _.get(period, ['period', 'instant']);
+
+            if (contextPeriod && contextPeriod === endDate) {
+              instanceHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
+              if (instanceHasExplicitMember) {
+                console.log('Instance has explicit member.');
+              } else {
+                contextForInstants = contextId;
+                console.log('Use Context:', contextForInstants);
+              }
+            }
+          }
+        })
+      }
+
+      if (contextForInstants === 'ERROR') {
+        contextForInstants = self.lookForAlternativeInstanceContext();
+      }
+
+      return contextForInstants;
     }
 
-    self.fields['IncomeStatementPeriodYTD'] = startDateYTD
-    contextForDurations = useContext
-    self.fields['ContextForDurations'] = contextForDurations;
-  }
+    function getContextForDurations(endDate) {
+      var contextForDurations = 'ERROR';
+      var contextId;
+      var contextPeriod;
+      var durationHasExplicitMember;
+      var startDateYTD = '2099-01-01';
+      var startDate;
 
-  function lookForAlternativeInstanceContext() {
-    var altContextId = null;
-    altNodesArr = _.filter(_.get(self.documentJson, ['xbrli:context', 'xbrli:period', 'xbrli:instant']) || _.get(self.documentJson, ['context', 'period', 'instant']), function(node) {
-      if (node === self.fields['BalanceSheetDate']) {
-        return true;
+      var durationNodesArr = self.getNodeList([
+        'us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease',
+        'us-gaap:CashPeriodIncreaseDecrease',
+        'us-gaap:NetIncomeLoss',
+        'dei:DocumentPeriodEndDate'
+        ]);
+
+        for (var k = 0; k < durationNodesArr.length; k++) {
+          contextId = durationNodesArr[k].contextRef;
+
+          _.forEach(_.get(self.documentJson, 'xbrli:context') || _.get(self.documentJson, 'context'), function(period) {
+          if (period.id === contextId) {
+            contextPeriod = _.get(period, ['xbrli:period', 'xbrli:endDate']) || _.get(period, ['period', 'endDate']);
+
+            if (contextPeriod === endDate) {
+              durationHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
+
+              if (durationHasExplicitMember) {
+                console.log('Duration has explicit member.');
+              } else {
+                startDate = _.get(period, ['xbrli:period', 'xbrli:startDate']) || _.get(period, ['period', 'startDate']);
+
+                console.log('Context start date:', startDate);
+                console.log('YTD start date:', startDateYTD);
+
+                if (startDate <= startDateYTD) {
+                  console.log('Context start date is less than current year to date, replace');
+                  console.log('Context start date: ', startDate);
+                  console.log('Current min: ', startDateYTD);
+
+                  startDateYTD = startDate;
+                  contextForDurations = _.get(period, 'id');
+                } else {
+                  console.log('Context start date is greater than YTD, keep current YTD');
+                  console.log('Context start date: ', startDate);
+                }
+
+                console.log('Use context ID: ', contextForDurations);
+                console.log('Current min: ', startDateYTD);
+                console.log('');
+                console.log('Use context: ', contextForDurations);
+              }
+            }
+          }
+        });
       }
-    })
 
-    for (var h = 0; h < altNodesArr.length; h++) {
-      _.forEach(_.get(self.documentJson, ['us-gaap:Assets']), function(node) {
-        if (node.contextRef === altNodesArr[h].id) {
-          altContextId = altNodesArr[h].id;
+      return {
+        contextForDurations: contextForDurations,
+        incomeStatementPeriodYTD: startDateYTD
+      }
+    }
+
+    function lookForAlternativeInstanceContext() {
+      var altContextId = null;
+      var altNodesArr = _.filter(_.get(self.documentJson,
+        ['xbrli:context', 'xbrli:period', 'xbrli:instant']) || _.get(self.documentJson, ['context', 'period', 'instant']), function(node) {
+        if (node === self.fields['BalanceSheetDate']) {
+          return true;
         }
       })
-    }
-    return altContextId;
-  }
-};
 
-module.exports = {
-    parse: parse
-};
+      for (var h = 0; h < altNodesArr.length; h++) {
+        _.forEach(_.get(self.documentJson, ['us-gaap:Assets']), function(node) {
+          if (node.contextRef === altNodesArr[h].id) {
+            altContextId = altNodesArr[h].id;
+          }
+        })
+      }
+      return altContextId;
+    }
+  };
+
+  module.exports = {
+      parse: parse
+  };
+})();

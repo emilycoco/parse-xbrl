@@ -1,2 +1,5 @@
-var ParseXrbl = require('./index.js');
-ParseXrbl.parse('./test/sampleXbrlDocuments/costco_inc_10k.xml');
+var ParseXbrl = require('./index.js');
+var parsed = ParseXbrl.parse('./test/sampleXbrlDocuments/wl_ross_holding_corp_10k.xml');
+parsed.then(function(parsedDoc) {
+  console.log('RESULTS', parsedDoc);
+})

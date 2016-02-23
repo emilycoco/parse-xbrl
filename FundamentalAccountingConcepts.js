@@ -76,7 +76,7 @@ function load(xbrlDoc) {
 
     // This adds redeemable noncontrolling interest and temporary equity which are rare, but can be reported seperately
     if (self.xbrl.fields['TemporaryEquity']) {
-        self.xbrl.fields['TemporaryEquity'] = Number(self.xbrl.fields['TemporaryEquity']) + Number(RedeemableNoncontrollingInterest);
+        self.xbrl.fields['TemporaryEquity'] = Number(self.xbrl.fields['TemporaryEquity']) + Number(redeemableNoncontrollingInterest);
     }
 
     // Equity

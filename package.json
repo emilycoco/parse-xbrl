@@ -16,6 +16,7 @@
   "author": "Emily Coco <emilymcoco@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "bluebird": "^3.3.1",
     "eslint": "^1.4.1",
     "eslint-config-clock": "^1.0.0",
     "eslint-config-standard": "^4.3.2",
