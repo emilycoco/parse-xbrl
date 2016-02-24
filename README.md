@@ -1,6 +1,6 @@
-# parse-xrbl
+# parse-xbrl
 
-Module to parse xrbl documents and output json.
+Module to parse xbrl documents and output json.
 
 [![build status](https://secure.travis-ci.org/emilycoco/parse-xrbl.svg)](http://travis-ci.org/emilycoco/parse-xrbl)
 [![dependency status](https://david-dm.org/emilycoco/parse-xrbl.svg)](https://david-dm.org/emilycoco/parse-xrbl)
@@ -8,7 +8,7 @@ Module to parse xrbl documents and output json.
 ## Installation
 
 ```
-npm install --save parse-xrbl
+npm install --save parse-xbrl
 ```
 
 ## Usage
@@ -18,4 +18,4 @@ npm install --save parse-xrbl
 
 ## License
 
-ISC
+MIT
