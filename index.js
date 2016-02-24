@@ -134,7 +134,7 @@
     }
 
     function getContextForInstants(endDate) {
-      var contextForInstants = 'ERROR';
+      var contextForInstants = null;
       var contextId;
       var contextPeriods;
       var contextPeriod;
@@ -169,7 +169,7 @@
         })
       }
 
-      if (contextForInstants === 'ERROR') {
+      if (contextForInstants === null) {
         contextForInstants = self.lookForAlternativeInstanceContext();
       }
 
@@ -177,7 +177,7 @@
     }
 
     function getContextForDurations(endDate) {
-      var contextForDurations = 'ERROR';
+      var contextForDurations = null;
       var contextId;
       var contextPeriod;
       var durationHasExplicitMember;

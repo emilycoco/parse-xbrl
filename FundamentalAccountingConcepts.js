@@ -713,7 +713,7 @@ function load(xbrlDoc) {
     self.xbrl.fields['SGR'] = ((self.xbrl.fields['NetIncomeLoss'] / self.xbrl.fields['Revenues'])
         * (1 + ((self.xbrl.fields['Assets'] - self.xbrl.fields['Equity']) / self.xbrl.fields['Equity']))) / ((1 / (self.xbrl.fields['Revenues'] / self.xbrl.fields['Assets']))
         - (((self.xbrl.fields['NetIncomeLoss'] / self.xbrl.fields['Revenues']) * (1 + (((self.xbrl.fields['Assets']
-        - self.xbrl.fields['Equity']) / self.xbrl.fields['Equity'])))))) || 'ERROR';
+        - self.xbrl.fields['Equity']) / self.xbrl.fields['Equity'])))))) || null;
 
     self.xbrl.fields['ROA'] = self.xbrl.fields['NetIncomeLoss'] / self.xbrl.fields['Assets'];
 
