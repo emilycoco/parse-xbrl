@@ -159,10 +159,10 @@
             if (contextPeriod && contextPeriod === endDate) {
               instanceHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
               if (instanceHasExplicitMember) {
-                console.log('Instance has explicit member.');
+                // console.log('Instance has explicit member.');
               } else {
                 contextForInstants = contextId;
-                console.log('Use Context:', contextForInstants);
+                // console.log('Use Context:', contextForInstants);
               }
             }
           }
@@ -202,29 +202,29 @@
               durationHasExplicitMember = _.get(period, ['xbrli:entity', 'xbrli:segment', 'xbrldi:explicitMember'], false) || _.get(period, ['entity', 'segment', 'explicitMember'], false);
 
               if (durationHasExplicitMember) {
-                console.log('Duration has explicit member.');
+                // console.log('Duration has explicit member.');
               } else {
                 startDate = _.get(period, ['xbrli:period', 'xbrli:startDate']) || _.get(period, ['period', 'startDate']);
 
-                console.log('Context start date:', startDate);
-                console.log('YTD start date:', startDateYTD);
+                // console.log('Context start date:', startDate);
+                // console.log('YTD start date:', startDateYTD);
 
                 if (startDate <= startDateYTD) {
-                  console.log('Context start date is less than current year to date, replace');
-                  console.log('Context start date: ', startDate);
-                  console.log('Current min: ', startDateYTD);
+                  // console.log('Context start date is less than current year to date, replace');
+                  // console.log('Context start date: ', startDate);
+                  // console.log('Current min: ', startDateYTD);
 
                   startDateYTD = startDate;
                   contextForDurations = _.get(period, 'id');
                 } else {
-                  console.log('Context start date is greater than YTD, keep current YTD');
-                  console.log('Context start date: ', startDate);
+                  // console.log('Context start date is greater than YTD, keep current YTD');
+                  // console.log('Context start date: ', startDate);
                 }
 
-                console.log('Use context ID: ', contextForDurations);
-                console.log('Current min: ', startDateYTD);
-                console.log('');
-                console.log('Use context: ', contextForDurations);
+                // console.log('Use context ID: ', contextForDurations);
+                // console.log('Current min: ', startDateYTD);
+                // console.log('');
+                // console.log('Use context: ', contextForDurations);
               }
             }
           }
@@ -257,7 +257,5 @@
     }
   };
 
-  module.exports = {
-      parse: parse
-  };
+  exports.parse = parse;
 })();

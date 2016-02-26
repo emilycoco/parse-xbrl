@@ -488,7 +488,7 @@ var rubyTuesday10qParsed = {
  'FiscalYear':'--05-31'
 }
 
-describe('parse-xrbl', function () {
+describe('parse-xbrl', function () {
 
   it('should parse the xbrl for Amazon 10k', function (done) {
     var amazon10kOutput = ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml');
