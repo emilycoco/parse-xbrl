@@ -12,6 +12,7 @@ Dev Dependency: npm install --save-dev parse-xbrl
 ## Usage
 Xbrl is a standardized language based on xml used to codify financial reporting. This module provides one task, parse. Parse takes one parameter, a file path to an xbrl document, and returns a promise that resolves with a json document of key financial data from the file. Xbrl documents can be malformed and inaccurate, so results aren't guaranteed. This module is based on the [python xbrl parser](https://github.com/lukerosiak/pysec) written by Luke Rosiak.
 
+
 ###### Example usage:
 
 ```
@@ -22,7 +23,8 @@ ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parse
 });
 ```
 
-###### Example output:
+
+###### Example output for Amazon's 10k (annual) statement:
 
 ```
 {
