@@ -59,7 +59,7 @@
           reject('No year end found.')
         }
       }).catch(function(err) {
-          reject('Problem with reading file', err);
+          reject('Problem with reading file\n' + err);
       })
     })
 
@@ -67,7 +67,17 @@
     function loadField(conceptToFind, fieldName, key) {
       key = key || '$t';
       fieldName = fieldName || conceptToFind;
-      self.fields[fieldName] = _.get(self.documentJson, ['dei:' + conceptToFind, key], 'Field not found.');
+      var concept = _.get(self.documentJson, 'dei:' + conceptToFind);
+      //console.log(fieldName + "=> " + JSON.stringify(concept, null, 3));
+      if(_.isArray(concept)) {
+        // Default to the first available contextRef
+        console.warn('Found ' + concept.length + ' context references')
+        _.forEach(concept, function(c, idx) { console.warn('=> ' + c.contextRef + (idx === 0 ? ' (selected)' : ''))});
+        concept = _.find(concept, function(c, idx) { return idx === 0; });
+      }
+      self.fields[fieldName] = _.get(concept, key, 'Field not found.');
+      
+      console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`);
     }
 
     function getFactValue(concept, periodType) {
@@ -108,7 +118,7 @@
     };
 
     function loadYear() {
-      var currentEnd = _.get(self.documentJson, ['dei:DocumentPeriodEndDate', '$t']);
+      var currentEnd = self.fields['DocumentPeriodEndDate'];
       if ((currentEnd).match(/(\d{4})-(\d{1,2})-(\d{1,2})/)) {
         return currentEnd;
       } else {
