@@ -374,7 +374,7 @@ var sweetsAndTreats10qParsed = {
  'CurrentAssets':5806,
  'IncomeFromEquityMethodInvestments':0,
  'NoncurrentAssets':0,
- 'EntityRegistrantName':'SWEETS &amp; TREATS INC.',
+ 'EntityRegistrantName':'SWEETS & TREATS INC.',
  'IncomeTaxExpenseBenefit':0,
  'CostOfRevenue':99,
  'ExchangeGainsLosses':0,
