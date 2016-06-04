@@ -1,7 +1,7 @@
 {
   "name": "parse-xbrl",
   "description": "Module to parse xbrl documents and output json.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "dependencies": {
     "bluebird": "^3.3.1",
     "fs": "0.0.2",

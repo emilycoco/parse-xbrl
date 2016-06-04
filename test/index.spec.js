@@ -374,7 +374,7 @@ var sweetsAndTreats10qParsed = {
  'CurrentAssets':5806,
  'IncomeFromEquityMethodInvestments':0,
  'NoncurrentAssets':0,
- 'EntityRegistrantName':'SWEETS &amp; TREATS INC.',
+ 'EntityRegistrantName':'SWEETS & TREATS INC.',
  'IncomeTaxExpenseBenefit':0,
  'CostOfRevenue':99,
  'ExchangeGainsLosses':0,
@@ -488,6 +488,76 @@ var rubyTuesday10qParsed = {
  'FiscalYear':'--05-31'
 }
 
+var google10kParsed = {
+ 'NetCashFlowsContinuing':-1364000000 ,
+ 'NetCashFlowsFinancingDiscontinued':0,
+ 'NetIncomeAvailableToCommonStockholdersBasic':15826000000,
+ 'NonoperatingIncomeLossPlusInterestAndDebtExpense':291000000,
+ 'NoncurrentLiabilities':7820000000,
+ 'IncomeFromContinuingOperationsBeforeTax':19651000000,
+ 'ContextForInstants':'FI2015Q4',
+ 'Equity':120331000000,
+ 'EntityFilerCategory':'Large Accelerated Filer',
+ 'DocumentType':'10-K',
+ 'ContextForDurations':'FD2015Q4YTD',
+ 'NetCashFlowsOperatingContinuing':26024000000,
+ 'OtherComprehensiveIncome':-1901000000,
+ 'ComprehensiveIncomeAttributableToNoncontrollingInterest':0,
+ 'NetCashFlowsInvestingContinuing':-23711000000,
+ 'ROS':0.21800530744509194,
+ 'NetIncomeAttributableToParent':16348000000,
+ 'SGR':0.15721800678957132,
+ 'NetCashFlowsInvestingDiscontinued':0,
+ 'ROE':0.13585859005576287,
+ 'PreferredStockDividendsAndOtherAdjustments':0,
+ 'NonoperatingIncomePlusInterestAndDebtExpensePlusIncomeFromEquityMethodInvestments':291000000,
+ 'NetCashFlowsOperating':26024000000,
+ 'CostsAndExpenses':55629000000,
+ 'CurrentAssets':90114000000,
+ 'IncomeFromEquityMethodInvestments':0,
+ 'NoncurrentAssets':57347000000,
+ 'EntityRegistrantName':'Alphabet Inc.',
+ 'IncomeTaxExpenseBenefit':3303000000,
+ 'CostOfRevenue':0,
+ 'ExchangeGainsLosses':0,
+ 'CurrentLiabilities':19310000000,
+ 'Assets':147461000000,
+ 'NetCashFlowsDiscontinued':0,
+ 'LiabilitiesAndEquity':147461000000,
+ 'OperatingIncomeLoss':19360000000,
+ 'TemporaryEquity':0,
+ 'NonoperatingIncomeLoss':0,
+ 'OtherOperatingIncome':0,
+ 'EquityAttributableToParent':120331000000,
+ 'GrossProfit':0,
+ 'TradingSymbol':'GOOG, GOOGL',
+ 'NetCashFlow':-1798000000,
+ 'DocumentFiscalYearFocus':'2015',
+ 'IncomeFromDiscontinuedOperations':0,
+ 'NetCashFlowsInvesting':-23711000000,
+ 'ComprehensiveIncome':14447000000,
+ 'Revenues':74989000000,
+ 'CommitmentsAndContingencies':0,
+ 'OperatingExpenses':0,
+ 'IncomeStatementPeriodYTD':'2015-01-01',
+ 'Liabilities':27130000000,
+ 'NetCashFlowsFinancingContinuing':-3677000000,
+ 'EntityCentralIndexKey':'0001652044',
+ 'EquityAttributableToNoncontrollingInterest':0,
+ 'ComprehensiveIncomeAttributableToParent':14447000000,
+ 'DocumentFiscalPeriodFocus':'FY',
+ 'NetIncomeLoss':16348000000,
+ 'IncomeBeforeEquityMethodInvestments':19651000000,
+ 'NetCashFlowsOperatingDiscontinued':0,
+ 'BalanceSheetDate':'2015-12-31',
+ 'NetCashFlowsFinancing':-3677000000,
+ 'ROA':0.11086321128976476,
+ 'ExtraordaryItemsGainLoss':0,
+ 'IncomeFromContinuingOperationsAfterTax':16348000000,
+ 'NetIncomeAttributableToNoncontrollingInterest':0,
+ 'InterestAndDebtExpense':0
+}
+
 describe('parse-xbrl', function () {
 
   it('should parse the xbrl for Amazon 10k', function (done) {
@@ -568,6 +638,18 @@ describe('parse-xbrl', function () {
       for (var key in results) {
         if (rubyTuesday10qParsed[key]) {
           expect(results[key]).toBe(rubyTuesday10qParsed[key]);
+          done();
+        }
+      }
+    })
+  })
+  
+  it('should parse the xbrl for Google/Alphabet 10k', function (done) {
+    var google10kOutput = ParseXbrl.parse('./test/sampleXbrlDocuments/google_10k.xml');
+    google10kOutput.then(function(results) {
+      for (var key in results) {
+        if (google10kParsed[key]) {
+          expect(results[key]).toBe(google10kParsed[key]);
           done();
         }
       }
