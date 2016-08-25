@@ -10,7 +10,7 @@ Dev Dependency: npm install --save-dev parse-xbrl
 ```
 
 ## Usage
-Xbrl is a standardized language based on xml used to codify financial reporting. This module provides one task, parse. Parse takes one parameter, a file path to an xbrl document, and returns a promise that resolves with a json document of key financial data from the file. Xbrl documents can be malformed and inaccurate, so results aren't guaranteed. This module is based on the [python xbrl parser](https://github.com/lukerosiak/pysec) written by Luke Rosiak.
+Xbrl is a standardized language based on xml used to codify financial reporting. This module provides two tasks, parse and parseStr. parse takes one parameter, a file path to an xbrl document, and returns a promise that resolves with a json document of key financial data from the file. ParseStr takes a string of XML and returns the same promise. Xbrl documents can be malformed and inaccurate, so results aren't guaranteed. This module is based on the [python xbrl parser](https://github.com/lukerosiak/pysec) written by Luke Rosiak.
 
 
 ###### Example usage:
@@ -18,7 +18,12 @@ Xbrl is a standardized language based on xml used to codify financial reporting.
 ```
 var ParseXbrl = require('parse-xbrl');
 
-ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parsedDoc) {
+ParseXbrl.parseFile('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parsedDoc) {
+  // Use results...
+});
+
+ParseXbrl.parseStr('<?xml version="1.0" encoding="US-ASCII"?>
+<xbrli:xbrl xmlns:amzn="http://www.amazon.com/20151231" xmlns:country="http://xbrl.sec.gov/country/2013-01-31">').then(function(parsedString) {
   // Use results...
 });
 ```

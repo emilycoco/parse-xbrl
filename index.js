@@ -7,8 +7,26 @@
   var xmlParser = require('xml2json');
   var FundamentalAccountingConcepts = require('./FundamentalAccountingConcepts.js');
 
-  function parse(pathToXbrlDoc) {
+  function parse(filePath) {
+    return new Promise(function(resolve, reject) {
+      // Load xml and parse to json
+      fs.readFileAsync(filePath, 'utf8')
+      .then(function(data) {
+        new parseStr(data).then(function(data) {
+          resolve(data);
+        })
+        .catch(function(err) {
+          console.log(err);
+        })
+      })
+      .catch(function(err) {
+          reject('Problem with reading file', err);
+      });
+    });
+  }
+  function parseStr(data) {
     var self = this;
+
     self.loadYear = loadYear;
     self.loadField = loadField;
     self.getFactValue = getFactValue;
@@ -20,47 +38,38 @@
     self.lookForAlternativeInstanceContext = lookForAlternativeInstanceContext;
 
     return new Promise(function(resolve, reject) {
+      var jsonObj =JSON.parse(xmlParser.toJson(data));
+      self.documentJson = jsonObj[Object.keys(jsonObj)[0]];
 
-      // Load xml and parse to json
-      fs.readFileAsync(pathToXbrlDoc).then(function(data) {
-        // fs.writeFile('parsedXml.json', xmlParser.toJson(data), function(err) {
-        //   console.log(err)
-        // })
-        var jsonObj =JSON.parse(xmlParser.toJson(data));
-        self.documentJson = jsonObj[Object.keys(jsonObj)[0]];
+      // Calculate and load basic facts from json doc
+      self.loadField('EntityRegistrantName');
+      self.loadField('CurrentFiscalYearEndDate');
+      self.loadField('EntityCentralIndexKey');
+      self.loadField('EntityFilerCategory');
+      self.loadField('TradingSymbol');
+      self.loadField('DocumentPeriodEndDate');
+      self.loadField('DocumentFiscalYearFocus');
+      self.loadField('DocumentFiscalPeriodFocus');
+      self.loadField('DocumentFiscalYearFocus', 'DocumentFiscalYearFocusContext', 'contextRef');
+      self.loadField('DocumentFiscalPeriodFocus', 'DocumentFiscalPeriodFocusContext', 'contextRef');
+      self.loadField('DocumentType');
 
-        // Calculate and load basic facts from json doc
-        self.loadField('EntityRegistrantName');
-        self.loadField('CurrentFiscalYearEndDate');
-        self.loadField('EntityCentralIndexKey');
-        self.loadField('EntityFilerCategory');
-        self.loadField('TradingSymbol');
-        self.loadField('DocumentPeriodEndDate');
-        self.loadField('DocumentFiscalYearFocus');
-        self.loadField('DocumentFiscalPeriodFocus');
-        self.loadField('DocumentFiscalYearFocus', 'DocumentFiscalYearFocusContext', 'contextRef');
-        self.loadField('DocumentFiscalPeriodFocus', 'DocumentFiscalPeriodFocusContext', 'contextRef');
-        self.loadField('DocumentType');
+      var currentYearEnd = self.loadYear();
+      if (currentYearEnd) {
+        var durations = self.getContextForDurations(currentYearEnd);
 
-        var currentYearEnd = self.loadYear();
-        if (currentYearEnd) {
-          var durations = self.getContextForDurations(currentYearEnd);
+        self.fields['BalanceSheetDate'] = durations.balanceSheetDate;
+        self.fields['IncomeStatementPeriodYTD'] = durations.incomeStatementPeriodYTD;
+        self.fields['ContextForInstants'] = self.getContextForInstants(currentYearEnd);
+        self.fields['ContextForDurations'] = durations.contextForDurations;
+        self.fields['BalanceSheetDate'] = currentYearEnd;
 
-          self.fields['BalanceSheetDate'] = durations.balanceSheetDate;
-          self.fields['IncomeStatementPeriodYTD'] = durations.incomeStatementPeriodYTD;
-          self.fields['ContextForInstants'] = self.getContextForInstants(currentYearEnd);
-          self.fields['ContextForDurations'] = durations.contextForDurations;
-          self.fields['BalanceSheetDate'] = currentYearEnd;
-
-          // Load the rest of the facts
-          FundamentalAccountingConcepts.load(self)
-          resolve(self.fields);
-        } else {
-          reject('No year end found.')
-        }
-      }).catch(function(err) {
-          reject('Problem with reading file\n' + err);
-      })
+        // Load the rest of the facts
+        FundamentalAccountingConcepts.load(self)
+        resolve(self.fields);
+      } else {
+        reject('No year end found.');
+      }
     })
 
     // Utility functions
@@ -72,17 +81,17 @@
       if(_.isArray(concept)) {
         // warn about multliple concepts...
         console.warn('Found ' + concept.length + ' context references')
-        _.forEach(concept, function(conceptInstance, idx) { 
+        _.forEach(concept, function(conceptInstance, idx) {
           console.warn('=> ' + conceptInstance.contextRef + (idx === 0 ? ' (selected)' : ''));
         });
-        
+
         // ... then default to the first available contextRef
-        concept = _.find(concept, function(conceptInstance, idx) { 
-          return idx === 0; 
+        concept = _.find(concept, function(conceptInstance, idx) {
+          return idx === 0;
         });
       }
       self.fields[fieldName] = _.get(concept, key, 'Field not found.');
-      
+
       console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`);
     }
 
@@ -274,4 +283,5 @@
   };
 
   exports.parse = parse;
+  exports.parseStr = parseStr;
 })();
