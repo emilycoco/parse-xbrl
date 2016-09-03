@@ -7,7 +7,8 @@
   var xmlParser = require('xml2json');
   var FundamentalAccountingConcepts = require('./FundamentalAccountingConcepts.js');
 
-  function parse(pathToXbrlDoc) {
+  function parse(pathToXbrlDoc, output) {
+    output = (output=== null)? false : output;
     var self = this;
     self.loadYear = loadYear;
     self.loadField = loadField;
@@ -83,7 +84,7 @@
       }
       self.fields[fieldName] = _.get(concept, key, 'Field not found.');
       
-      console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`);
+      if (output){ console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`); }
     }
 
     function getFactValue(concept, periodType) {

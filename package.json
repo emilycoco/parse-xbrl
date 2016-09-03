@@ -4,12 +4,16 @@
   "version": "1.0.3",
   "dependencies": {
     "bluebird": "^3.3.1",
+    "colors": "^1.1.2",
     "fs": "0.0.2",
     "lodash": "^4.5.1",
     "xml2json": "^0.9.0"
   },
   "main": "index.js",
-  "files": ["FundamentalAccountingConcepts.js", "index.js"],
+  "files": [
+    "FundamentalAccountingConcepts.js",
+    "index.js"
+  ],
   "scripts": {
     "test": "jasmine-node test/index.spec.js"
   },
