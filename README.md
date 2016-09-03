@@ -23,6 +23,11 @@ ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parse
 });
 ```
 
+###### Example CLI usage:
+
+```
+parse-xbrl inputfile.xbrl outputfile.json
+```
 
 ###### Example output for Amazon's 10k (annual) statement:
 
