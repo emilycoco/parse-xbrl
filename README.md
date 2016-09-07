@@ -24,9 +24,22 @@ ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parse
 ```
 
 ###### Example CLI usage:
+To use the CLI, it must be globally installed via
+
+```
+npm install -g parse-xbrl
+```
+
+Then run
 
 ```
 parse-xbrl inputfile.xbrl outputfile.json
+```
+
+If you don't wish for it to be globally installed, then you must run it from the command line, via
+
+```
+node_modules/parse-xbrl/bin/cli.js inputfile.xbrl outputfile.json
 ```
 
 ###### Example output for Amazon's 10k (annual) statement:
