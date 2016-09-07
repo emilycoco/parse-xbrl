@@ -8,7 +8,7 @@
   var FundamentalAccountingConcepts = require('./FundamentalAccountingConcepts.js');
 
   function parse(pathToXbrlDoc, output) {
-    output = (output=== null)? false : output;
+    output = output === true;
     var self = this;
     self.loadYear = loadYear;
     self.loadField = loadField;
@@ -84,7 +84,9 @@
       }
       self.fields[fieldName] = _.get(concept, key, 'Field not found.');
       
-      if (output){ console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`); }
+      if (output){
+          console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`); 
+      }
     }
 
     function getFactValue(concept, periodType) {
