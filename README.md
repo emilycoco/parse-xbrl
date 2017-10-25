@@ -18,10 +18,12 @@ Xbrl is a standardized language based on xml used to codify financial reporting.
 ```
 var ParseXbrl = require('parse-xbrl');
 
-ParseXbrl.parseFile('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parsedDoc) {
+// path to locally accessible file, does not load file over http/https
+ParseXbrl.parse('./test/sampleXbrlDocuments/amazon_10k.xml').then(function(parsedDoc) {
   // Use results...
 });
 
+// string of correctly formatted xml/xbrl
 ParseXbrl.parseStr('<?xml version="1.0" encoding="US-ASCII"?>
 <xbrli:xbrl xmlns:amzn="http://www.amazon.com/20151231" xmlns:country="http://xbrl.sec.gov/country/2013-01-31">').then(function(parsedString) {
   // Use results...

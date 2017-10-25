@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.8.6
+3 info using node@v6.0.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/emilycoco/Desktop/personal_projects/parse-xbrl',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/emilycoco/.npm/parse-xbrl/1.1.3/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/emilycoco/.npm correctMkdir not in flight; initializing
+10 info lifecycle parse-xbrl@1.1.3~prepublish: parse-xbrl@1.1.3
+11 silly lifecycle parse-xbrl@1.1.3~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/emilycoco/.npm/parse-xbrl/1.1.3/package.tgz',
+12 verbose tar pack   '/Users/emilycoco/Desktop/personal_projects/parse-xbrl' ]
+13 verbose tarball /Users/emilycoco/.npm/parse-xbrl/1.1.3/package.tgz
+14 verbose folder /Users/emilycoco/Desktop/personal_projects/parse-xbrl
+15 verbose addLocalTarball adding from inside cache /Users/emilycoco/.npm/parse-xbrl/1.1.3/package.tgz
+16 verbose correctMkdir /Users/emilycoco/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd parse-xbrl@1.1.3
+18 verbose afterAdd /Users/emilycoco/.npm/parse-xbrl/1.1.3/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/emilycoco/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/emilycoco/.npm/parse-xbrl/1.1.3/package/package.json written
+21 silly publish { name: 'parse-xbrl',
+21 silly publish   description: 'Module to parse xbrl documents and output json.',
+21 silly publish   version: '1.1.3',
+21 silly publish   dependencies: { bluebird: '^3.3.1', lodash: '^4.5.1', xml2json: '^0.9.0' },
+21 silly publish   main: 'index.js',
+21 silly publish   files: [ 'FundamentalAccountingConcepts.js', 'index.js' ],
+21 silly publish   scripts: { test: 'jasmine-node test/index.spec.js' },
+21 silly publish   publishConfig: { registry: 'http://registry.npmjs.org' },
+21 silly publish   author: { name: 'Emily Coco', email: 'emilymcoco@gmail.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies:
+21 silly publish    { eslint: '^2.1.0',
+21 silly publish      'eslint-config-clock': '^1.0.0',
+21 silly publish      'eslint-config-standard': '^5.1.0',
+21 silly publish      'eslint-plugin-standard': '^1.3.0',
+21 silly publish      'jasmine-node': '^1.14.5' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+ssh://git@github.com/emilycoco/parse-xbrl.git' },
+21 silly publish   keywords: [ 'xbrl', 'xml', 'parse', 'financial', 'edgar', 'sec' ],
+21 silly publish   readme: '# parse-xbrl\n\nModule to parse xbrl documents and output json.\n\n## Installation\n\n```\nDependency: npm install --save parse-xbrl\nDev Dependency: npm install --save-dev parse-xbrl\n```\n\n## Usage\nXbrl is a standardized language based on xml used to codify financial reporting. This module provides two tasks, parse and parseStr. parse takes one parameter, a file path to an xbrl document, and returns a promise that resolves with a json document of key financial data from the file. ParseStr takes a string of XML and returns the same promise. Xbrl documents can be malformed and inaccurate, so results aren\'t guaranteed. This module is based on the [python xbrl parser](https://github.com/lukerosiak/pysec) written by Luke Rosiak. Check out the web client for this package [here](http://www.xbrltojson.com/).\n\n\n###### Example usage:\n\n```\nvar ParseXbrl = require(\'parse-xbrl\');\n\n// path to locally accessible file, does not load file over http/https\nParseXbrl.parse(\'./test/sampleXbrlDocuments/amazon_10k.xml\').then(function(parsedDoc) {\n  // Use results...\n});\n\n// string of correctly formatted xml/xbrl\nParseXbrl.parseStr(\'<?xml version="1.0" encoding="US-ASCII"?>\n<xbrli:xbrl xmlns:amzn="http://www.amazon.com/20151231" xmlns:country="http://xbrl.sec.gov/country/2013-01-31">\').then(function(parsedString) {\n  // Use results...\n});\n```\n\n\n###### Example output for Amazon\'s 10k (annual) statement:\n\n```\n{\n  EntityRegistrantName: \'AMAZON COM INC\',\n  CurrentFiscalYearEndDate: \'--12-31\',\n  EntityCentralIndexKey: \'0001018724\',\n  EntityFilerCategory: \'Large Accelerated Filer\',\n  TradingSymbol: \'AMZN\',\n  DocumentPeriodEndDate: \'2015-12-31\',\n  DocumentFiscalYearFocus: \'2015\',\n  DocumentFiscalPeriodFocus: \'FY\',\n  DocumentFiscalYearFocusContext: \'FD2015Q4YTD\',\n  DocumentFiscalPeriodFocusContext: \'FD2015Q4YTD\',\n  DocumentType: \'10-K\',\n  BalanceSheetDate: \'2015-12-31\',\n  IncomeStatementPeriodYTD: \'2015-01-01\',\n  ContextForInstants: \'FI2015Q4\',\n  ContextForDurations: \'FD2015Q4YTD\',\n  Assets: 65444000000,\n  CurrentAssets: 36474000000,\n  NoncurrentAssets: 28970000000,\n  LiabilitiesAndEquity: 65444000000,\n  Liabilities: 52060000000,\n  CurrentLiabilities: 33899000000,\n  NoncurrentLiabilities: 18161000000,\n  CommitmentsAndContingencies: 0,\n  TemporaryEquity: 0,\n  Equity: 13384000000,\n  EquityAttributableToNoncontrollingInterest: 0,\n  EquityAttributableToParent: 13384000000,\n  Revenues: 107006000000,\n  CostOfRevenue: 71651000000,\n  GrossProfit: 35355000000,\n  OperatingExpenses: 33122000000,\n  CostsAndExpenses: 104773000000,\n  OtherOperatingIncome: 0,\n  OperatingIncomeLoss: 2233000000,\n  NonoperatingIncomeLoss: -665000000,\n  InterestAndDebtExpense: 0,\n  IncomeBeforeEquityMethodInvestments: 1568000000,\n  IncomeFromEquityMethodInvestments: -22000000,\n  IncomeFromContinuingOperationsBeforeTax: 1568000000,\n  IncomeTaxExpenseBenefit: 950000000,\n  IncomeFromContinuingOperationsAfterTax: 596000000,\n  IncomeFromDiscontinuedOperations: 0,\n  ExtraordaryItemsGainLoss: 0,\n  NetIncomeLoss: 596000000,\n  NetIncomeAvailableToCommonStockholdersBasic: 596000000,\n  PreferredStockDividendsAndOtherAdjustments: 0,\n  NetIncomeAttributableToNoncontrollingInterest: 0,\n  NetIncomeAttributableToParent: 596000000,\n  OtherComprehensiveIncome: -212000000,\n  ComprehensiveIncome: 384000000,\n  ComprehensiveIncomeAttributableToParent: 384000000,\n  ComprehensiveIncomeAttributableToNoncontrollingInterest: 0,\n  NonoperatingIncomeLossPlusInterestAndDebtExpense: -665000000,\n  NonoperatingIncomePlusInterestAndDebtExpensePlusIncomeFromEquityMethodInvestments: -665000000,\n  NetCashFlow: 1333000000,\n  NetCashFlowsOperating: 11920000000,\n  NetCashFlowsInvesting: -6450000000,\n  NetCashFlowsFinancing: -3763000000,\n  NetCashFlowsOperatingContinuing: 11920000000,\n  NetCashFlowsInvestingContinuing: -6450000000,\n  NetCashFlowsFinancingContinuing: -3763000000,\n  NetCashFlowsOperatingDiscontinued: 0,\n  NetCashFlowsInvestingDiscontinued: 0,\n  NetCashFlowsFinancingDiscontinued: 0,\n  NetCashFlowsDiscontinued: 0,\n  ExchangeGainsLosses: -374000000,\n  NetCashFlowsContinuing: 1707000000,\n  SGR: 0.046606193306224585,\n  ROA: 0.009107022798117474,\n  ROE: 0.04453078302450687,\n  ROS: 0.0055697811337682\n}\n```\n\n## Credits\n[Emily Coco](https://github.com/emilycoco/)\n\n## License\n\nMIT\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '720e73de797541f64a99cd630d73714ed9e2f327',
+21 silly publish   homepage: 'https://github.com/emilycoco/parse-xbrl#readme',
+21 silly publish   _id: 'parse-xbrl@1.1.3',
+21 silly publish   _shasum: '33c0bd0e96040c67fc24fe9d49a149708f685f5a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig { registry: 'http://registry.npmjs.org' }
+23 silly mapToRegistry name parse-xbrl
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'parse-xbrl',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'parse-xbrl',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri http://registry.npmjs.org/parse-xbrl
+28 verbose publish registryBase http://registry.npmjs.org/
+29 silly publish uploading /Users/emilycoco/.npm/parse-xbrl/1.1.3/package.tgz
+30 verbose request uri http://registry.npmjs.org/parse-xbrl
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 8:22:15 PM
+33 verbose request using bearer token for auth
+34 verbose request id 02a9dfd8bd11984a
+35 http request PUT http://registry.npmjs.org/parse-xbrl
+36 http 403 http://registry.npmjs.org/parse-xbrl
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '91',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 25 Oct 2017 03:22:11 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-pao17426-PAO',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1508901730.202002,VS0,VE1321',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/emilycoco/.npm/registry.npmjs.org/parse-xbrl on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 1.1.3. : parse-xbrl
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid parse-xbrl
+43 verbose cwd /Users/emilycoco/Desktop/personal_projects/parse-xbrl
+44 error Darwin 15.0.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.0.0
+47 error npm  v3.8.6
+48 error code E403
+49 error You cannot publish over the previously published version 1.1.3. : parse-xbrl
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
