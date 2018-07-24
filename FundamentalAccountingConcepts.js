@@ -457,7 +457,7 @@ function load(xbrlDoc) {
     if (self.xbrl.fields['GrossProfit'] !== 0 &&
         (self.xbrl.fields['Revenues'] !== 0 &&
         self.xbrl.fields['CostOfRevenue'] === 0)) {
-        self.xbrl.fields['CostOfRevenue'] = self.xbrl.fields['GrossProfit'] + self.xbrl.fields['Revenues'];
+        self.xbrl.fields['CostOfRevenue'] = self.xbrl.fields['Revenues'] - self.xbrl.fields['GrossProfit'];
     }
 
     // Impute: CostsAndExpenses (would NEVER have costs and expenses if has gross profit, gross profit is multi-step and costs and expenses is single-step)
