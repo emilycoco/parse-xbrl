@@ -92,7 +92,7 @@
       }
       self.fields[fieldName] = _.get(concept, key, 'Field not found.');
 
-      console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`);
+      //console.log(`loaded ${fieldName}: ${self.fields[fieldName]}`);
     }
 
     function getFactValue(concept, periodType) {
