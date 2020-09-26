@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "plugins": ["promise", "standard"],
+  "extends": ["airbnb", "airbnb/hooks"]
+}
